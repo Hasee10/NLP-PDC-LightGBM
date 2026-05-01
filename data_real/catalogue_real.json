@@ -1,0 +1,932 @@
+[
+  {
+    "sku": "GRC-0001",
+    "name": "Horizon Organic Whole Milk 1gal",
+    "brand": "Horizon",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0002",
+    "name": "Lucerne Whole Milk 1gal",
+    "brand": "Lucerne",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0003",
+    "name": "Great Value Whole Milk 1gal",
+    "brand": "GreatValue",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0004",
+    "name": "Birds Eye Mixed Vegetables 12oz",
+    "brand": "BirdsEye",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0005",
+    "name": "Green Giant Broccoli Florets 12oz",
+    "brand": "GreenGiant",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0006",
+    "name": "Martin's Potato Rolls 15ct",
+    "brand": "Martins",
+    "category": "Bakery"
+  },
+  {
+    "sku": "GRC-0007",
+    "name": "Wonder Classic Hamburger Buns 8ct",
+    "brand": "Wonder",
+    "category": "Bakery"
+  },
+  {
+    "sku": "GRC-0008",
+    "name": "Coca-Cola Classic 12pk 12oz",
+    "brand": "CocaCola",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0009",
+    "name": "Pepsi Regular 12pk 12oz",
+    "brand": "Pepsi",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0010",
+    "name": "Sprite 12pk 12oz Cans",
+    "brand": "Sprite",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0011",
+    "name": "Chobani Greek Yogurt Plain 32oz",
+    "brand": "Chobani",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0012",
+    "name": "Yoplait Strawberry Yogurt 6oz",
+    "brand": "Yoplait",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0013",
+    "name": "Bolthouse Farms Carrots 2lb Bag",
+    "brand": "Bolthouse",
+    "category": "Produce"
+  },
+  {
+    "sku": "GRC-0014",
+    "name": "Sweet Potatoes 3lb Bag",
+    "brand": "Generic",
+    "category": "Produce"
+  },
+  {
+    "sku": "GRC-0015",
+    "name": "Dole Pineapple Chunks 20oz Can",
+    "brand": "Dole",
+    "category": "Canned"
+  },
+  {
+    "sku": "GRC-0016",
+    "name": "Mango Chunks 10oz Bag",
+    "brand": "Generic",
+    "category": "Produce"
+  },
+  {
+    "sku": "GRC-0017",
+    "name": "Nestle Pure Life Water 24pk 16.9oz",
+    "brand": "Nestle",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0018",
+    "name": "Dasani Purified Water 24pk",
+    "brand": "Dasani",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0019",
+    "name": "Oscar Mayer Bacon 16oz",
+    "brand": "OscarMayer",
+    "category": "Meat"
+  },
+  {
+    "sku": "GRC-0020",
+    "name": "Smithfield Pork Chops 2lb",
+    "brand": "Smithfield",
+    "category": "Meat"
+  },
+  {
+    "sku": "GRC-0021",
+    "name": "Entenmann's Glazed Donuts 8ct",
+    "brand": "Entenmanns",
+    "category": "Bakery"
+  },
+  {
+    "sku": "GRC-0022",
+    "name": "Little Debbie Honey Buns 6ct",
+    "brand": "LittleDebbie",
+    "category": "Bakery"
+  },
+  {
+    "sku": "GRC-0023",
+    "name": "Tropicana OJ No Pulp 52oz",
+    "brand": "Tropicana",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0024",
+    "name": "Ocean Spray Cranberry Juice 64oz",
+    "brand": "OceanSpray",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0025",
+    "name": "Daisy Sour Cream 16oz",
+    "brand": "Daisy",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0026",
+    "name": "Land O Lakes Sour Cream 16oz",
+    "brand": "LandOLakes",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0027",
+    "name": "Fuji Apple 3lb Bag",
+    "brand": "Generic",
+    "category": "Produce"
+  },
+  {
+    "sku": "GRC-0028",
+    "name": "Gala Apples 5lb Bag",
+    "brand": "Generic",
+    "category": "Produce"
+  },
+  {
+    "sku": "GRC-0029",
+    "name": "Eggland's Best Eggs 12ct Large",
+    "brand": "Egglands",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0030",
+    "name": "Vital Farms Eggs 12ct",
+    "brand": "VitalFarms",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0031",
+    "name": "Dave's Killer Bread 21 Grain",
+    "brand": "Daves",
+    "category": "Bakery"
+  },
+  {
+    "sku": "GRC-0032",
+    "name": "Nature's Own Wheat Bread 20oz",
+    "brand": "NaturesOwn",
+    "category": "Bakery"
+  },
+  {
+    "sku": "GRC-0033",
+    "name": "I Can't Believe It's Not Butter 15oz",
+    "brand": "ICBINB",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0034",
+    "name": "Smart Balance Buttery Spread 15oz",
+    "brand": "SmartBalance",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0035",
+    "name": "80/20 Ground Beef 1lb",
+    "brand": "Generic",
+    "category": "Meat"
+  },
+  {
+    "sku": "GRC-0036",
+    "name": "Angus Beef Patties 4ct",
+    "brand": "Generic",
+    "category": "Meat"
+  },
+  {
+    "sku": "GRC-0037",
+    "name": "Oscar Mayer Wieners 16oz",
+    "brand": "OscarMayer",
+    "category": "Meat"
+  },
+  {
+    "sku": "GRC-0038",
+    "name": "Ball Park Beef Franks 15oz",
+    "brand": "BallPark",
+    "category": "Meat"
+  },
+  {
+    "sku": "GRC-0039",
+    "name": "Budweiser Beer 12pk 12oz",
+    "brand": "Budweiser",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0040",
+    "name": "Coors Light Beer 12pk 12oz",
+    "brand": "Coors",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0041",
+    "name": "Kraft Shredded Mozzarella 8oz",
+    "brand": "Kraft",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0042",
+    "name": "Sargento Sliced Cheddar 7oz",
+    "brand": "Sargento",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0043",
+    "name": "Miller Lite 12pk 12oz Cans",
+    "brand": "Miller",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0044",
+    "name": "Bud Light 12pk 12oz Cans",
+    "brand": "BudLight",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0045",
+    "name": "Bic Ballpoint Pens 10ct",
+    "brand": "Bic",
+    "category": "General"
+  },
+  {
+    "sku": "GRC-0046",
+    "name": "Composition Notebook 100pg",
+    "brand": "Generic",
+    "category": "General"
+  },
+  {
+    "sku": "GRC-0047",
+    "name": "Tyson Chicken Breasts 3lb",
+    "brand": "Tyson",
+    "category": "Meat"
+  },
+  {
+    "sku": "GRC-0048",
+    "name": "Perdue Whole Chicken 4lb",
+    "brand": "Perdue",
+    "category": "Meat"
+  },
+  {
+    "sku": "GRC-0049",
+    "name": "Kraft Velveeta Shells & Cheese 12oz",
+    "brand": "Kraft",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0050",
+    "name": "Horizon Organic Cottage Cheese 16oz",
+    "brand": "Horizon",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0051",
+    "name": "Glad Kitchen Trash Bags 13gal 80ct",
+    "brand": "Glad",
+    "category": "Household"
+  },
+  {
+    "sku": "GRC-0052",
+    "name": "Hefty Trash Bags 30gal 20ct",
+    "brand": "Hefty",
+    "category": "Household"
+  },
+  {
+    "sku": "GRC-0053",
+    "name": "Land O Lakes Unsalted Butter 4ct",
+    "brand": "LandOLakes",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0054",
+    "name": "Kerrygold Grass-Fed Butter 8oz",
+    "brand": "Kerrygold",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0055",
+    "name": "Fresh Strawberries 1lb Clamshell",
+    "brand": "Generic",
+    "category": "Produce"
+  },
+  {
+    "sku": "GRC-0056",
+    "name": "Broccoli Crowns 1.5lb",
+    "brand": "Generic",
+    "category": "Produce"
+  },
+  {
+    "sku": "GRC-0057",
+    "name": "Uncle Ben's Long Grain White Rice 5lb",
+    "brand": "UncleBens",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0058",
+    "name": "Mahatma Jasmine Rice 5lb",
+    "brand": "Mahatma",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0059",
+    "name": "Comet Powder Cleanser 21oz",
+    "brand": "Comet",
+    "category": "Household"
+  },
+  {
+    "sku": "GRC-0060",
+    "name": "Bar Keepers Friend 21oz",
+    "brand": "BKF",
+    "category": "Household"
+  },
+  {
+    "sku": "GRC-0061",
+    "name": "Gold Medal All Purpose Flour 5lb",
+    "brand": "GoldMedal",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0062",
+    "name": "King Arthur Bread Flour 5lb",
+    "brand": "KingArthur",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0063",
+    "name": "Parmalat Whole Milk 1L",
+    "brand": "Parmalat",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0064",
+    "name": "Horizon Organic 2% Milk 8pk",
+    "brand": "Horizon",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0065",
+    "name": "Birds Eye Broccoli Florets 12oz",
+    "brand": "BirdsEye",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0066",
+    "name": "Green Giant Sweet Corn 12oz",
+    "brand": "GreenGiant",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0067",
+    "name": "McCormick Garlic Powder 3.12oz",
+    "brand": "McCormick",
+    "category": "Condiments"
+  },
+  {
+    "sku": "GRC-0068",
+    "name": "Spice Islands Basil 0.5oz",
+    "brand": "SpiceIslands",
+    "category": "Condiments"
+  },
+  {
+    "sku": "GRC-0069",
+    "name": "Philadelphia Cream Cheese 8oz",
+    "brand": "Philadelphia",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0070",
+    "name": "Kraft Cream Cheese Block 8oz",
+    "brand": "Kraft",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0071",
+    "name": "Lean Cuisine Chicken Alfredo 9oz",
+    "brand": "LeanCuisine",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0072",
+    "name": "Marie Callender's Pot Pie 10oz",
+    "brand": "MarieCallender",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0073",
+    "name": "Yellow Onions 3lb Bag",
+    "brand": "Generic",
+    "category": "Produce"
+  },
+  {
+    "sku": "GRC-0074",
+    "name": "Red Onions 2lb Bag",
+    "brand": "Generic",
+    "category": "Produce"
+  },
+  {
+    "sku": "GRC-0075",
+    "name": "Gatorade Lemon Lime 32oz",
+    "brand": "Gatorade",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0076",
+    "name": "Snapple Peach Tea 16oz",
+    "brand": "Snapple",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0077",
+    "name": "StarKist Chunk Light Tuna in Water 5oz",
+    "brand": "StarKist",
+    "category": "Canned"
+  },
+  {
+    "sku": "GRC-0078",
+    "name": "Bumble Bee Solid White Albacore 5oz",
+    "brand": "BumbleBee",
+    "category": "Canned"
+  },
+  {
+    "sku": "GRC-0079",
+    "name": "Dove Bar Soap 6pk 3.75oz",
+    "brand": "Dove",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0080",
+    "name": "Colgate Toothpaste Total 4.8oz",
+    "brand": "Colgate",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0081",
+    "name": "Eggo Homestyle Waffles 10ct",
+    "brand": "Eggo",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0082",
+    "name": "Aunt Jemima Buttermilk Pancake Mix 32oz",
+    "brand": "AuntJemima",
+    "category": "Breakfast"
+  },
+  {
+    "sku": "GRC-0083",
+    "name": "Ore-Ida Golden Fries 32oz",
+    "brand": "OreIda",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0084",
+    "name": "Alexia Waffle Fries 20oz",
+    "brand": "Alexia",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0085",
+    "name": "Barilla Spaghetti 16oz",
+    "brand": "Barilla",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0086",
+    "name": "Ronzoni Penne Rigate 16oz",
+    "brand": "Ronzoni",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0087",
+    "name": "Heinz White Vinegar 32oz",
+    "brand": "Heinz",
+    "category": "Condiments"
+  },
+  {
+    "sku": "GRC-0088",
+    "name": "Bragg Apple Cider Vinegar 32oz",
+    "brand": "Bragg",
+    "category": "Condiments"
+  },
+  {
+    "sku": "GRC-0089",
+    "name": "Domino Pure Cane Sugar 4lb",
+    "brand": "Domino",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0090",
+    "name": "C&H Pure Cane Sugar 4lb",
+    "brand": "CH",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0091",
+    "name": "Kellogg's Corn Flakes 18oz",
+    "brand": "Kelloggs",
+    "category": "Breakfast"
+  },
+  {
+    "sku": "GRC-0092",
+    "name": "Cheerios Original 18oz",
+    "brand": "Cheerios",
+    "category": "Breakfast"
+  },
+  {
+    "sku": "GRC-0093",
+    "name": "Special K Original 12.2oz",
+    "brand": "Kelloggs",
+    "category": "Breakfast"
+  },
+  {
+    "sku": "GRC-0094",
+    "name": "Folgers Classic Roast 30.5oz",
+    "brand": "Folgers",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0095",
+    "name": "Maxwell House Original 30.6oz",
+    "brand": "MaxwellHouse",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0096",
+    "name": "Starbucks Pike Place 12oz",
+    "brand": "Starbucks",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0097",
+    "name": "Crisco Vegetable Oil 48oz",
+    "brand": "Crisco",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0098",
+    "name": "Mazola Corn Oil 40oz",
+    "brand": "Mazola",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0099",
+    "name": "Purina Cat Chow 3.15lb",
+    "brand": "Purina",
+    "category": "Pets"
+  },
+  {
+    "sku": "GRC-0100",
+    "name": "Fancy Feast Gravy 3oz Can",
+    "brand": "FancyFeast",
+    "category": "Pets"
+  },
+  {
+    "sku": "GRC-0101",
+    "name": "M&Ms Milk Chocolate 10.7oz",
+    "brand": "MMs",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0102",
+    "name": "Reese's Peanut Butter Cups 2pk",
+    "brand": "Reeses",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0103",
+    "name": "Snickers Bar 1.86oz",
+    "brand": "Snickers",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0104",
+    "name": "Hershey's Milk Chocolate Bar 1.55oz",
+    "brand": "Hersheys",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0105",
+    "name": "Ghirardelli Dark Chocolate 3.5oz",
+    "brand": "Ghirardelli",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0106",
+    "name": "Red Bull Energy 8.4oz Can",
+    "brand": "RedBull",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0107",
+    "name": "Monster Energy Original 16oz",
+    "brand": "Monster",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0108",
+    "name": "Ben & Jerry's Chocolate Fudge Brownie Pint",
+    "brand": "BenJerrys",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0109",
+    "name": "Haagen-Dazs Vanilla Ice Cream 14oz",
+    "brand": "HaagenDazs",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0110",
+    "name": "Breyers Natural Vanilla 48oz",
+    "brand": "Breyers",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0111",
+    "name": "Bounty Select-A-Size 12 Rolls",
+    "brand": "Bounty",
+    "category": "Household"
+  },
+  {
+    "sku": "GRC-0112",
+    "name": "Scott Comfort Plus 12 Rolls",
+    "brand": "Scott",
+    "category": "Household"
+  },
+  {
+    "sku": "GRC-0113",
+    "name": "Del Monte Sweet Corn 15.25oz",
+    "brand": "DelMonte",
+    "category": "Canned"
+  },
+  {
+    "sku": "GRC-0114",
+    "name": "Bush's Best Pinto Beans 15.5oz",
+    "brand": "Bushs",
+    "category": "Canned"
+  },
+  {
+    "sku": "GRC-0115",
+    "name": "Lysol Toilet Bowl Cleaner 24oz",
+    "brand": "Lysol",
+    "category": "Household"
+  },
+  {
+    "sku": "GRC-0116",
+    "name": "Clorox Toilet Bowl Cleaner 24oz",
+    "brand": "Clorox",
+    "category": "Household"
+  },
+  {
+    "sku": "GRC-0117",
+    "name": "Dawn Dish Soap Original 19.4oz",
+    "brand": "Dawn",
+    "category": "Household"
+  },
+  {
+    "sku": "GRC-0118",
+    "name": "Palmolive Dish Soap 20oz",
+    "brand": "Palmolive",
+    "category": "Household"
+  },
+  {
+    "sku": "GRC-0119",
+    "name": "Tide Pods Laundry 42ct",
+    "brand": "Tide",
+    "category": "Household"
+  },
+  {
+    "sku": "GRC-0120",
+    "name": "Gain Flings Laundry 42ct",
+    "brand": "Gain",
+    "category": "Household"
+  },
+  {
+    "sku": "GRC-0121",
+    "name": "Swiffer Sweeper Dry Refills 32ct",
+    "brand": "Swiffer",
+    "category": "Household"
+  },
+  {
+    "sku": "GRC-0122",
+    "name": "Pledge Furniture Spray 9.7oz",
+    "brand": "Pledge",
+    "category": "Household"
+  },
+  {
+    "sku": "GRC-0123",
+    "name": "Gorton's Fish Fillets 19oz",
+    "brand": "Gortons",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0124",
+    "name": "Van de Kamp's Fish Sticks 24ct",
+    "brand": "VanddeKamps",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0125",
+    "name": "Duracell AA Batteries 10ct",
+    "brand": "Duracell",
+    "category": "General"
+  },
+  {
+    "sku": "GRC-0126",
+    "name": "Energizer AA Batteries 8ct",
+    "brand": "Energizer",
+    "category": "General"
+  },
+  {
+    "sku": "GRC-0127",
+    "name": "Smirnoff Vodka 750ml",
+    "brand": "Smirnoff",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0128",
+    "name": "Jack Daniel's Tennessee 750ml",
+    "brand": "JackDaniels",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0129",
+    "name": "Johnson's Baby Shampoo 13.6oz",
+    "brand": "Johnsons",
+    "category": "Babies"
+  },
+  {
+    "sku": "GRC-0130",
+    "name": "Pampers Sensitive Wipes 216ct",
+    "brand": "Pampers",
+    "category": "Babies"
+  },
+  {
+    "sku": "GRC-0131",
+    "name": "Dole Sliced Peaches 15.25oz",
+    "brand": "Dole",
+    "category": "Canned"
+  },
+  {
+    "sku": "GRC-0132",
+    "name": "Del Monte Fruit Cocktail 15.25oz",
+    "brand": "DelMonte",
+    "category": "Canned"
+  },
+  {
+    "sku": "GRC-0133",
+    "name": "Oscar Mayer Deli Fresh Ham 9oz",
+    "brand": "OscarMayer",
+    "category": "Deli"
+  },
+  {
+    "sku": "GRC-0134",
+    "name": "Boar's Head Honey Ham 8oz",
+    "brand": "BoarsHead",
+    "category": "Deli"
+  },
+  {
+    "sku": "GRC-0135",
+    "name": "Kraft Singles American Cheese 24ct",
+    "brand": "Kraft",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0136",
+    "name": "Velveeta Original 32oz",
+    "brand": "Velveeta",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0137",
+    "name": "Vlasic Kosher Dill Pickles 32oz",
+    "brand": "Vlasic",
+    "category": "Condiments"
+  },
+  {
+    "sku": "GRC-0138",
+    "name": "Mt. Olive Pickles Bread & Butter 24oz",
+    "brand": "MtOlive",
+    "category": "Condiments"
+  },
+  {
+    "sku": "GRC-0139",
+    "name": "Atlantic Salmon Fillet 1lb",
+    "brand": "Generic",
+    "category": "Meat"
+  },
+  {
+    "sku": "GRC-0140",
+    "name": "Tilapia Fillets 2lb",
+    "brand": "Generic",
+    "category": "Meat"
+  },
+  {
+    "sku": "GRC-0141",
+    "name": "French's Yellow Mustard 20oz",
+    "brand": "Frenchs",
+    "category": "Condiments"
+  },
+  {
+    "sku": "GRC-0142",
+    "name": "Grey Poupon Dijon Mustard 10oz",
+    "brand": "GreyPoupon",
+    "category": "Condiments"
+  },
+  {
+    "sku": "GRC-0143",
+    "name": "Skippy Peanut Butter Creamy 16.3oz",
+    "brand": "Skippy",
+    "category": "Spreads"
+  },
+  {
+    "sku": "GRC-0144",
+    "name": "Jif Peanut Butter Creamy 16oz",
+    "brand": "Jif",
+    "category": "Spreads"
+  },
+  {
+    "sku": "GRC-0145",
+    "name": "Smucker's Strawberry Jam 18oz",
+    "brand": "Smuckers",
+    "category": "Spreads"
+  },
+  {
+    "sku": "GRC-0146",
+    "name": "Campbell's Tomato Soup 10.75oz",
+    "brand": "Campbells",
+    "category": "Canned"
+  },
+  {
+    "sku": "GRC-0147",
+    "name": "Progresso Chicken Noodle 18.5oz",
+    "brand": "Progresso",
+    "category": "Canned"
+  },
+  {
+    "sku": "GRC-0148",
+    "name": "Knorr Chicken Noodle Soup Mix 1.8oz",
+    "brand": "Knorr",
+    "category": "Canned"
+  },
+  {
+    "sku": "GRC-0149",
+    "name": "Heinz Tomato Ketchup 32oz Bottle",
+    "brand": "Heinz",
+    "category": "Condiments"
+  },
+  {
+    "sku": "GRC-0150",
+    "name": "Hunt's Ketchup 24oz Bottle",
+    "brand": "Hunts",
+    "category": "Condiments"
+  },
+  {
+    "sku": "GRC-0151",
+    "name": "Lay's Classic Chips 8oz Bag",
+    "brand": "Lays",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0152",
+    "name": "Pringles Original 5.96oz Can",
+    "brand": "Pringles",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0153",
+    "name": "Doritos Nacho Cheese 9.75oz",
+    "brand": "Doritos",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0154",
+    "name": "Hellmann's Real Mayonnaise 30oz",
+    "brand": "Hellmanns",
+    "category": "Condiments"
+  },
+  {
+    "sku": "GRC-0155",
+    "name": "Duke's Mayonnaise 32oz",
+    "brand": "Dukes",
+    "category": "Condiments"
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd /tmp)",
+      "Bash(python3)",
+      "Bash(pdftotext \"NLP_PDC_Proposal \\(2\\).pdf\" -)",
+      "Bash(pdftotext \"1.pdf\" -)",
+      "Bash(pdftotext \"2.pdf\" -)",
+      "Bash(pdftotext \"3.pdf\" -)",
+      "Bash(pip list *)",
+      "Bash(pip install *)",
+      "Bash(python evaluate.py)",
+      "Read(//c/Users/Administrator/AppData/Roaming/Claude/local-agent-mode-sessions/skills-plugin/a849f714-324f-4579-9d17-95e8a0d79d92/cb260e6a-204c-404b-9af6-895963a54be0/skills/docx/**)",
+      "Bash(npm list *)",
+      "Bash(npm install *)",
+      "Bash(node generate_paper.js)",
+      "Bash(node -e \"require\\('docx'\\)\")",
+      "Bash(npm root *)",
+      "Bash(NODE_PATH=\"C:/Users/Administrator/AppData/Roaming/npm/node_modules\" node generate_paper.js)",
+      "Bash(python scripts/office/validate.py \"C:/Users/Administrator/OneDrive/Desktop/Semester#6/NLP/Project/RetailEL_Research_Paper.docx\")",
+      "Bash(python -c \"import zipfile; z = zipfile.ZipFile\\('C:/Users/Administrator/OneDrive/Desktop/Semester#6/NLP/Project/RetailEL_Research_Paper.docx'\\); print\\('Files:', len\\(z.namelist\\(\\)\\)\\); print\\(z.namelist\\(\\)[:8]\\)\")",
+      "Bash(python evaluate_extended.py)",
+      "Bash(NODE_PATH=\"C:/Users/Administrator/AppData/Roaming/npm/node_modules\" node generate_paper_v2.js)",
+      "Bash(python scripts/office/unpack.py \"C:/Users/Administrator/OneDrive/Desktop/Semester#6/NLP/Project/RetailEL_Research_Paper.docx\" \"C:/Users/Administrator/OneDrive/Desktop/Semester#6/NLP/Project/paper_unpacked/\")",
+      "Bash(python -c ' *)"
+    ]
+  }
+}
