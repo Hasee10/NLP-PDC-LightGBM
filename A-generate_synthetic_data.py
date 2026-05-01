@@ -212,7 +212,7 @@ def generate_dataset(
         writer.writeheader()
         writer.writerows(all_items)
 
-    print(f"\n✅ DONE")
+    print(f"\nDONE")
     print(f"Transactions: {len(transactions)}")
     print(f"Items: {len(all_items)}")
     print(f"Saved to: {output_dir}")

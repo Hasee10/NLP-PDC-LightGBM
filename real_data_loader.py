@@ -279,6 +279,63 @@ def try_download_csv(url: str, label: str = "") -> list[dict] | None:
         return None
 
 
+# ── Local Instacart loader (uses files already on disk) ───────────────────────
+
+def _load_instacart_local(products_path: Path, depts_path: Path,
+                           max_skus: int = MAX_SKUS) -> list[dict] | None:
+    """Build catalogue from local products.csv + departments.csv."""
+    try:
+        with open(products_path, newline="", encoding="utf-8", errors="replace") as f:
+            products = list(csv.DictReader(f))
+        with open(depts_path, newline="", encoding="utf-8", errors="replace") as f:
+            dept_rows = list(csv.DictReader(f))
+    except Exception as e:
+        print(f"  Local file read failed: {e}")
+        return None
+
+    # Build dept_id → name map
+    dept_map: dict[str, str] = {}
+    for r in dept_rows:
+        did  = str(r.get("department_id", "") or "").strip()
+        name = str(r.get("department", "") or "").strip().lower()
+        if did and name:
+            dept_map[did] = name
+
+    # Fallback to known IDs if file was empty/malformed
+    if not dept_map:
+        dept_map = {
+            "1":"frozen","3":"bakery","4":"produce","7":"beverages",
+            "9":"dry goods pasta","13":"pantry","14":"breakfast",
+            "15":"canned goods","16":"dairy eggs","17":"household",
+            "19":"snacks","20":"deli","11":"personal care","12":"meat seafood",
+        }
+
+    catalogue: list[dict] = []
+    seen: set[str] = set()
+    for row in products:
+        name = str(row.get("product_name", "") or "").strip()
+        if not name or name.lower() in seen:
+            continue
+        dept_id   = str(row.get("department_id", "") or "").strip()
+        dept_name = dept_map.get(dept_id, "other").lower()
+        if dept_name not in KEEP_DEPTS:
+            continue
+        seen.add(name.lower())
+        words = name.split()
+        brand = words[0].title() if words and words[0][0].isupper() else "Generic"
+        catalogue.append({
+            "sku":      f"GRC-{len(catalogue)+1:04d}",
+            "name":     name,
+            "brand":    brand,
+            "category": DEPT_CATEGORY.get(dept_name, "General"),
+        })
+        if len(catalogue) >= max_skus:
+            break
+
+    print(f"  Local Instacart catalogue: {len(catalogue)} SKUs")
+    return catalogue if catalogue else None
+
+
 # ── Instacart path ────────────────────────────────────────────────────────────
 
 def load_instacart(max_skus: int = MAX_SKUS) -> list[dict] | None:
@@ -666,14 +723,22 @@ def load_real_data(output_dir: str = OUTPUT_DIR,
         }
 
     print("=" * 60)
-    print("Downloading Real Grocery Dataset (Instacart / arules)")
+    print("Building Real Grocery Dataset (Instacart / arules)")
     print("=" * 60)
 
     catalogue: list[dict] | None = None
 
-    # ── 1. Try Instacart ───────────────────────────────────────────────────────
-    print("\n[1] Attempting Instacart Open Dataset ...")
-    catalogue = load_instacart(MAX_SKUS)
+    # ── 0. Use local Instacart files if present (highest priority) ─────────────
+    local_products = Path("products.csv")
+    local_depts    = Path("departments.csv")
+    if local_products.exists() and local_depts.exists():
+        print("\n[0] Local Instacart files found — loading products.csv + departments.csv ...")
+        catalogue = _load_instacart_local(local_products, local_depts, MAX_SKUS)
+
+    # ── 1. Try Instacart mirrors (only if no local files) ─────────────────────
+    if not catalogue:
+        print("\n[1] Attempting Instacart mirrors ...")
+        catalogue = load_instacart(MAX_SKUS)
 
     # ── 2. Fall back to arules ─────────────────────────────────────────────────
     if not catalogue:

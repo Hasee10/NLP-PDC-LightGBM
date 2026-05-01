@@ -1,148 +1,144 @@
 {
   "mode": "real",
   "main_results": {
-    "full_pipeline_acc1": 0.9922,
-    "no_basket_ctx_acc1": 0.9964,
-    "bm25_only_acc1": 0.7559,
-    "no_reranker_acc1": 0.7619,
-    "neural_biencoder_acc1": 0.8891
+    "full_pipeline_acc1": 0.9676,
+    "no_basket_ctx_acc1": 0.9902,
+    "bm25_only_acc1": 0.7312,
+    "no_reranker_acc1": 0.7355,
+    "neural_biencoder_acc1": 0.8064
   },
   "performance": {
-    "throughput_items_per_sec": 317.18,
-    "wall_clock_ms": 3.153,
-    "stage_sum_ms": 2.946,
-    "overhead_ms": 0.207,
-    "overhead_pct": 6.6,
+    "throughput_items_per_sec": 184.4,
+    "wall_clock_ms": 5.423,
+    "stage_sum_ms": 5.22,
+    "overhead_ms": 0.203,
+    "overhead_pct": 3.7,
     "llm_bypass_rate": 1.0,
     "stage_latency_ms": {
       "normalisation": {
-        "mean": 0.217,
-        "p50": 0.213,
-        "p95": 0.29,
-        "p99": 0.333
+        "mean": 0.237,
+        "p50": 0.21,
+        "p95": 0.305,
+        "p99": 0.387
       },
       "retrieval": {
-        "mean": 2.263,
-        "p50": 2.247,
-        "p95": 2.676,
-        "p99": 2.936
+        "mean": 4.189,
+        "p50": 3.972,
+        "p95": 5.454,
+        "p99": 7.414
       },
       "reranking": {
-        "mean": 0.462,
-        "p50": 0.457,
-        "p95": 0.537,
-        "p99": 0.606
+        "mean": 0.789,
+        "p50": 0.519,
+        "p95": 0.734,
+        "p99": 1.558
       },
       "selection": {
-        "mean": 0.003,
-        "p50": 0.003,
-        "p95": 0.004,
-        "p99": 0.004
+        "mean": 0.004,
+        "p50": 0.004,
+        "p95": 0.005,
+        "p99": 0.008
       }
     }
   },
   "feature_ablation": {
-    "full_model_acc": 0.9922,
+    "full_model_acc": 0.9676,
     "feature_importance": {
       "Levenshtein Distance": {
-        "gain_pct": 0.84,
-        "split_pct": 7.0
+        "gain_pct": 1.46,
+        "split_pct": 9.13
       },
       "Levenshtein Ratio": {
-        "gain_pct": 19.03,
-        "split_pct": 18.07
+        "gain_pct": 12.56,
+        "split_pct": 20.45
       },
       "Jaccard Token Overlap": {
-        "gain_pct": 11.36,
-        "split_pct": 14.72
+        "gain_pct": 22.23,
+        "split_pct": 14.83
       },
       "Bigram Overlap": {
-        "gain_pct": 12.17,
-        "split_pct": 16.15
+        "gain_pct": 12.25,
+        "split_pct": 14.0
       },
       "Char-level Jaccard": {
-        "gain_pct": 0.51,
-        "split_pct": 7.28
+        "gain_pct": 0.63,
+        "split_pct": 6.4
       },
       "Length Ratio": {
-        "gain_pct": 11.7,
-        "split_pct": 17.78
+        "gain_pct": 13.47,
+        "split_pct": 19.53
       },
       "RRF Score": {
-        "gain_pct": 43.29,
-        "split_pct": 8.15
+        "gain_pct": 36.72,
+        "split_pct": 9.38
       },
       "Prior SKU Frequency": {
-        "gain_pct": 1.1,
-        "split_pct": 10.85
+        "gain_pct": 0.68,
+        "split_pct": 6.27
       }
     },
     "leave_one_out": {
       "Levenshtein Distance": {
-        "acc_without": 0.9898,
-        "acc_drop_pp": 0.241
+        "acc_without": 0.9646,
+        "acc_drop_pp": 0.305
       },
       "Levenshtein Ratio": {
-        "acc_without": 0.9759,
-        "acc_drop_pp": 1.627
+        "acc_without": 0.9462,
+        "acc_drop_pp": 2.138
       },
       "Jaccard Token Overlap": {
-        "acc_without": 0.9819,
-        "acc_drop_pp": 1.025
+        "acc_without": 0.9554,
+        "acc_drop_pp": 1.222
       },
       "Bigram Overlap": {
-        "acc_without": 0.9765,
-        "acc_drop_pp": 1.567
+        "acc_without": 0.9524,
+        "acc_drop_pp": 1.527
       },
       "Char-level Jaccard": {
-        "acc_without": 0.9922,
-        "acc_drop_pp": 0.0
+        "acc_without": 0.9658,
+        "acc_drop_pp": 0.183
       },
       "Length Ratio": {
-        "acc_without": 0.9843,
-        "acc_drop_pp": 0.784
+        "acc_without": 0.9481,
+        "acc_drop_pp": 1.955
       },
       "RRF Score": {
-        "acc_without": 0.9892,
-        "acc_drop_pp": 0.301
+        "acc_without": 0.9676,
+        "acc_drop_pp": 0.0
       },
       "Prior SKU Frequency": {
-        "acc_without": 0.9916,
-        "acc_drop_pp": 0.06
+        "acc_without": 0.967,
+        "acc_drop_pp": 0.061
       }
     }
   },
   "noise_robustness": {
-    "variant_acc": 0.9891,
-    "canonical_acc": 0.9982,
-    "n_variant": 1104,
-    "n_canonical": 555
+    "variant_acc": 0.9554,
+    "canonical_acc": 0.9897,
+    "n_variant": 1053,
+    "n_canonical": 584
   },
   "category_accuracy": {
-    "Babies": 1.0,
-    "Bakery": 1.0,
-    "Beverages": 1.0,
-    "Breakfast": 1.0,
+    "Bakery": 0.9545,
+    "Beverages": 0.9245,
+    "Breakfast": 0.9672,
     "Canned": 1.0,
-    "Condiments": 0.9706,
-    "Dairy": 1.0,
-    "Deli": 1.0,
-    "Frozen": 1.0,
-    "General": 1.0,
-    "Household": 1.0,
+    "Dairy": 0.9778,
+    "Deli": 0.9552,
+    "Frozen": 0.966,
+    "Household": 0.9709,
+    "International": 1.0,
     "Meat": 1.0,
-    "Pantry": 0.9774,
-    "Personal": 0.9545,
-    "Pets": 1.0,
-    "Produce": 0.9829,
-    "Snacks": 1.0,
-    "Spreads": 0.9211
+    "Pantry": 0.9683,
+    "Personal": 0.9841,
+    "Produce": 0.8939,
+    "Snacks": 0.9863
   },
   "dataset_stats": {
-    "train_items": 7741,
-    "val_items": 1659,
-    "test_items": 1659,
-    "num_skus": 155,
+    "train_items": 7636,
+    "val_items": 1636,
+    "test_items": 1637,
+    "num_skus": 500,
     "data_dir": "data_real"
   }
 }

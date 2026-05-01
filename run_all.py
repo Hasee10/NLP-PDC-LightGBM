@@ -4,6 +4,7 @@ from datetime import datetime
 from pathlib import Path
 
 COMMANDS = [
+    [sys.executable, "A-generate_synthetic_data.py"],
     [sys.executable, "real_data_loader.py"],
     [sys.executable, "C-evaluate_full.py", "--mode", "real"],
 ]

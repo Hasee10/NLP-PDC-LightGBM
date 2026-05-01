@@ -1,0 +1,32 @@
+============================================================
+RetailEL Pipeline Run
+Started : 2026-05-02 02:57:01
+============================================================
+
+Running: C:\Python314\python.exe A-generate_synthetic_data.py
+[INFO] Loaded 49688 products
+[INFO] Loaded 5000 baskets
+
+
+[STDERR]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\OneDrive\Desktop\Semester#6\NLP\Project\A-generate_synthetic_data.py", line 226, in <module>
+    generate_dataset(
+    ~~~~~~~~~~~~~~~~^
+        products_path="products.csv",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        n_transactions=500
+        ^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Administrator\OneDrive\Desktop\Semester#6\NLP\Project\A-generate_synthetic_data.py", line 215, in generate_dataset
+    print(f"\n\u2705 DONE")
+    ~~~~~^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 2: character maps to <undefined>
+
+
+FAILED with exit code 1

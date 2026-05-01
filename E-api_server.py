@@ -283,4 +283,7 @@ def reload_pipeline():
 if __name__ == "__main__":
     import uvicorn
 
-    uvicorn.run("api:app", host="0.0.0.0", port=8000, reload=False)
+    # Pass the app object directly — avoids module-name issues with
+    # filenames that contain dashes (E-api_server.py is not importable
+    # as a module by name, so "api:app" string form would fail).
+    uvicorn.run(app, host="0.0.0.0", port=8000, reload=False)

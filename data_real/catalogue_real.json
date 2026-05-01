@@ -1,932 +1,3002 @@
 [
   {
     "sku": "GRC-0001",
-    "name": "Horizon Organic Whole Milk 1gal",
-    "brand": "Horizon",
-    "category": "Dairy"
+    "name": "Chocolate Sandwich Cookies",
+    "brand": "Chocolate",
+    "category": "Snacks"
   },
   {
     "sku": "GRC-0002",
-    "name": "Lucerne Whole Milk 1gal",
-    "brand": "Lucerne",
-    "category": "Dairy"
+    "name": "All-Seasons Salt",
+    "brand": "All-Seasons",
+    "category": "Pantry"
   },
   {
     "sku": "GRC-0003",
-    "name": "Great Value Whole Milk 1gal",
-    "brand": "GreatValue",
-    "category": "Dairy"
+    "name": "Robust Golden Unsweetened Oolong Tea",
+    "brand": "Robust",
+    "category": "Beverages"
   },
   {
     "sku": "GRC-0004",
-    "name": "Birds Eye Mixed Vegetables 12oz",
-    "brand": "BirdsEye",
+    "name": "Smart Ones Classic Favorites Mini Rigatoni With Vodka Cream Sauce",
+    "brand": "Smart",
     "category": "Frozen"
   },
   {
     "sku": "GRC-0005",
-    "name": "Green Giant Broccoli Florets 12oz",
-    "brand": "GreenGiant",
-    "category": "Frozen"
+    "name": "Green Chile Anytime Sauce",
+    "brand": "Green",
+    "category": "Pantry"
   },
   {
     "sku": "GRC-0006",
-    "name": "Martin's Potato Rolls 15ct",
-    "brand": "Martins",
-    "category": "Bakery"
+    "name": "Dry Nose Oil",
+    "brand": "Dry",
+    "category": "Personal"
   },
   {
     "sku": "GRC-0007",
-    "name": "Wonder Classic Hamburger Buns 8ct",
-    "brand": "Wonder",
-    "category": "Bakery"
+    "name": "Pure Coconut Water With Orange",
+    "brand": "Pure",
+    "category": "Beverages"
   },
   {
     "sku": "GRC-0008",
-    "name": "Coca-Cola Classic 12pk 12oz",
-    "brand": "CocaCola",
-    "category": "Beverages"
+    "name": "Cut Russet Potatoes Steam N' Mash",
+    "brand": "Cut",
+    "category": "Frozen"
   },
   {
     "sku": "GRC-0009",
-    "name": "Pepsi Regular 12pk 12oz",
-    "brand": "Pepsi",
-    "category": "Beverages"
+    "name": "Light Strawberry Blueberry Yogurt",
+    "brand": "Light",
+    "category": "Dairy"
   },
   {
     "sku": "GRC-0010",
-    "name": "Sprite 12pk 12oz Cans",
-    "brand": "Sprite",
+    "name": "Sparkling Orange Juice & Prickly Pear Beverage",
+    "brand": "Sparkling",
     "category": "Beverages"
   },
   {
     "sku": "GRC-0011",
-    "name": "Chobani Greek Yogurt Plain 32oz",
-    "brand": "Chobani",
-    "category": "Dairy"
+    "name": "Peach Mango Juice",
+    "brand": "Peach",
+    "category": "Beverages"
   },
   {
     "sku": "GRC-0012",
-    "name": "Yoplait Strawberry Yogurt 6oz",
-    "brand": "Yoplait",
-    "category": "Dairy"
+    "name": "Chocolate Fudge Layer Cake",
+    "brand": "Chocolate",
+    "category": "Frozen"
   },
   {
     "sku": "GRC-0013",
-    "name": "Bolthouse Farms Carrots 2lb Bag",
-    "brand": "Bolthouse",
-    "category": "Produce"
+    "name": "Saline Nasal Mist",
+    "brand": "Saline",
+    "category": "Personal"
   },
   {
     "sku": "GRC-0014",
-    "name": "Sweet Potatoes 3lb Bag",
-    "brand": "Generic",
-    "category": "Produce"
+    "name": "Fresh Scent Dishwasher Cleaner",
+    "brand": "Fresh",
+    "category": "Household"
   },
   {
     "sku": "GRC-0015",
-    "name": "Dole Pineapple Chunks 20oz Can",
-    "brand": "Dole",
-    "category": "Canned"
+    "name": "Mint Chocolate Flavored Syrup",
+    "brand": "Mint",
+    "category": "Snacks"
   },
   {
     "sku": "GRC-0016",
-    "name": "Mango Chunks 10oz Bag",
-    "brand": "Generic",
-    "category": "Produce"
+    "name": "Rendered Duck Fat",
+    "brand": "Rendered",
+    "category": "Meat"
   },
   {
     "sku": "GRC-0017",
-    "name": "Nestle Pure Life Water 24pk 16.9oz",
-    "brand": "Nestle",
-    "category": "Beverages"
+    "name": "Pizza for One Suprema  Frozen Pizza",
+    "brand": "Pizza",
+    "category": "Frozen"
   },
   {
     "sku": "GRC-0018",
-    "name": "Dasani Purified Water 24pk",
-    "brand": "Dasani",
-    "category": "Beverages"
+    "name": "Gluten Free Quinoa Three Cheese & Mushroom Blend",
+    "brand": "Gluten",
+    "category": "Pantry"
   },
   {
     "sku": "GRC-0019",
-    "name": "Oscar Mayer Bacon 16oz",
-    "brand": "OscarMayer",
-    "category": "Meat"
+    "name": "Pomegranate Cranberry & Aloe Vera Enrich Drink",
+    "brand": "Pomegranate",
+    "category": "Beverages"
   },
   {
     "sku": "GRC-0020",
-    "name": "Smithfield Pork Chops 2lb",
-    "brand": "Smithfield",
-    "category": "Meat"
+    "name": "Fresh Breath Oral Rinse Mild Mint",
+    "brand": "Fresh",
+    "category": "Personal"
   },
   {
     "sku": "GRC-0021",
-    "name": "Entenmann's Glazed Donuts 8ct",
-    "brand": "Entenmanns",
-    "category": "Bakery"
+    "name": "Organic Turkey Burgers",
+    "brand": "Organic",
+    "category": "Meat"
   },
   {
     "sku": "GRC-0022",
-    "name": "Little Debbie Honey Buns 6ct",
-    "brand": "LittleDebbie",
-    "category": "Bakery"
+    "name": "Tri-Vi-Sol\u00ae Vitamins A-C-and D Supplement Drops for Infants",
+    "brand": "Tri-Vi-Sol\u00ae",
+    "category": "Personal"
   },
   {
     "sku": "GRC-0023",
-    "name": "Tropicana OJ No Pulp 52oz",
-    "brand": "Tropicana",
-    "category": "Beverages"
+    "name": "Salted Caramel Lean Protein & Fiber Bar",
+    "brand": "Salted",
+    "category": "Snacks"
   },
   {
     "sku": "GRC-0024",
-    "name": "Ocean Spray Cranberry Juice 64oz",
-    "brand": "OceanSpray",
-    "category": "Beverages"
+    "name": "Complete Spring Water Foaming Antibacterial Hand Wash",
+    "brand": "Complete",
+    "category": "Personal"
   },
   {
     "sku": "GRC-0025",
-    "name": "Daisy Sour Cream 16oz",
-    "brand": "Daisy",
-    "category": "Dairy"
+    "name": "Wheat Chex Cereal",
+    "brand": "Wheat",
+    "category": "Breakfast"
   },
   {
     "sku": "GRC-0026",
-    "name": "Land O Lakes Sour Cream 16oz",
-    "brand": "LandOLakes",
-    "category": "Dairy"
+    "name": "Fresh Cut Golden Sweet No Salt Added Whole Kernel Corn",
+    "brand": "Fresh",
+    "category": "Canned"
   },
   {
     "sku": "GRC-0027",
-    "name": "Fuji Apple 3lb Bag",
-    "brand": "Generic",
-    "category": "Produce"
+    "name": "Three Cheese Ziti, Marinara with Meatballs",
+    "brand": "Three",
+    "category": "Frozen"
   },
   {
     "sku": "GRC-0028",
-    "name": "Gala Apples 5lb Bag",
-    "brand": "Generic",
+    "name": "White Pearl Onions",
+    "brand": "White",
     "category": "Produce"
   },
   {
     "sku": "GRC-0029",
-    "name": "Eggland's Best Eggs 12ct Large",
-    "brand": "Egglands",
-    "category": "Dairy"
+    "name": "Nacho Cheese White Bean Chips",
+    "brand": "Nacho",
+    "category": "Snacks"
   },
   {
     "sku": "GRC-0030",
-    "name": "Vital Farms Eggs 12ct",
-    "brand": "VitalFarms",
-    "category": "Dairy"
+    "name": "Organic Spaghetti Style Pasta",
+    "brand": "Organic",
+    "category": "Pantry"
   },
   {
     "sku": "GRC-0031",
-    "name": "Dave's Killer Bread 21 Grain",
-    "brand": "Daves",
-    "category": "Bakery"
+    "name": "Peanut Butter Cereal",
+    "brand": "Peanut",
+    "category": "Breakfast"
   },
   {
     "sku": "GRC-0032",
-    "name": "Nature's Own Wheat Bread 20oz",
-    "brand": "NaturesOwn",
-    "category": "Bakery"
-  },
-  {
-    "sku": "GRC-0033",
-    "name": "I Can't Believe It's Not Butter 15oz",
-    "brand": "ICBINB",
-    "category": "Dairy"
-  },
-  {
-    "sku": "GRC-0034",
-    "name": "Smart Balance Buttery Spread 15oz",
-    "brand": "SmartBalance",
-    "category": "Dairy"
-  },
-  {
-    "sku": "GRC-0035",
-    "name": "80/20 Ground Beef 1lb",
-    "brand": "Generic",
+    "name": "Italian Herb Porcini Mushrooms Chicken Sausage",
+    "brand": "Italian",
     "category": "Meat"
   },
   {
+    "sku": "GRC-0033",
+    "name": "Traditional Lasagna with Meat Sauce Savory Italian Recipes",
+    "brand": "Traditional",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0034",
+    "name": "Noodle Soup Mix With Chicken Broth",
+    "brand": "Noodle",
+    "category": "Canned"
+  },
+  {
+    "sku": "GRC-0035",
+    "name": "Daily Tangerine Citrus Flavored Beverage",
+    "brand": "Daily",
+    "category": "Beverages"
+  },
+  {
     "sku": "GRC-0036",
-    "name": "Angus Beef Patties 4ct",
-    "brand": "Generic",
+    "name": "Beef Hot Links Beef Smoked Sausage With Chile Peppers",
+    "brand": "Beef",
     "category": "Meat"
   },
   {
     "sku": "GRC-0037",
-    "name": "Oscar Mayer Wieners 16oz",
-    "brand": "OscarMayer",
-    "category": "Meat"
+    "name": "Organic Sourdough Einkorn Crackers Rosemary",
+    "brand": "Organic",
+    "category": "Snacks"
   },
   {
     "sku": "GRC-0038",
-    "name": "Ball Park Beef Franks 15oz",
-    "brand": "BallPark",
-    "category": "Meat"
+    "name": "Biotin 1000 mcg",
+    "brand": "Biotin",
+    "category": "Personal"
   },
   {
     "sku": "GRC-0039",
-    "name": "Budweiser Beer 12pk 12oz",
-    "brand": "Budweiser",
-    "category": "Beverages"
+    "name": "Organic Clementines",
+    "brand": "Organic",
+    "category": "Produce"
   },
   {
     "sku": "GRC-0040",
-    "name": "Coors Light Beer 12pk 12oz",
-    "brand": "Coors",
+    "name": "Sparkling Raspberry Seltzer",
+    "brand": "Sparkling",
     "category": "Beverages"
   },
   {
     "sku": "GRC-0041",
-    "name": "Kraft Shredded Mozzarella 8oz",
-    "brand": "Kraft",
-    "category": "Dairy"
+    "name": "European Cucumber",
+    "brand": "European",
+    "category": "Produce"
   },
   {
     "sku": "GRC-0042",
-    "name": "Sargento Sliced Cheddar 7oz",
-    "brand": "Sargento",
-    "category": "Dairy"
+    "name": "Raisin Cinnamon Bagels 5 count",
+    "brand": "Raisin",
+    "category": "Frozen"
   },
   {
     "sku": "GRC-0043",
-    "name": "Miller Lite 12pk 12oz Cans",
-    "brand": "Miller",
-    "category": "Beverages"
+    "name": "Onion Flavor Organic Roasted Seaweed Snack",
+    "brand": "Onion",
+    "category": "International"
   },
   {
     "sku": "GRC-0044",
-    "name": "Bud Light 12pk 12oz Cans",
-    "brand": "BudLight",
-    "category": "Beverages"
+    "name": "School Glue, Washable, No Run",
+    "brand": "School",
+    "category": "Household"
   },
   {
     "sku": "GRC-0045",
-    "name": "Bic Ballpoint Pens 10ct",
-    "brand": "Bic",
-    "category": "General"
+    "name": "Vegetarian Grain Meat Sausages Italian - 4 CT",
+    "brand": "Vegetarian",
+    "category": "Deli"
   },
   {
     "sku": "GRC-0046",
-    "name": "Composition Notebook 100pg",
-    "brand": "Generic",
-    "category": "General"
-  },
-  {
-    "sku": "GRC-0047",
-    "name": "Tyson Chicken Breasts 3lb",
-    "brand": "Tyson",
-    "category": "Meat"
-  },
-  {
-    "sku": "GRC-0048",
-    "name": "Perdue Whole Chicken 4lb",
-    "brand": "Perdue",
-    "category": "Meat"
-  },
-  {
-    "sku": "GRC-0049",
-    "name": "Kraft Velveeta Shells & Cheese 12oz",
-    "brand": "Kraft",
+    "name": "Pumpkin Muffin Mix",
+    "brand": "Pumpkin",
     "category": "Pantry"
   },
   {
+    "sku": "GRC-0047",
+    "name": "Sa Extra Hold Mousse Hair Styling",
+    "brand": "Sa",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0048",
+    "name": "Whole Leaf Pure Aloe With Lemon Juice",
+    "brand": "Whole",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0049",
+    "name": "Lasting Color Shampoo",
+    "brand": "Lasting",
+    "category": "Personal"
+  },
+  {
     "sku": "GRC-0050",
-    "name": "Horizon Organic Cottage Cheese 16oz",
-    "brand": "Horizon",
-    "category": "Dairy"
+    "name": "Healthy Pop Butter Popcorn",
+    "brand": "Healthy",
+    "category": "Snacks"
   },
   {
     "sku": "GRC-0051",
-    "name": "Glad Kitchen Trash Bags 13gal 80ct",
-    "brand": "Glad",
+    "name": "Flat Toothpicks",
+    "brand": "Flat",
     "category": "Household"
   },
   {
     "sku": "GRC-0052",
-    "name": "Hefty Trash Bags 30gal 20ct",
-    "brand": "Hefty",
-    "category": "Household"
+    "name": "Whole Wheat Tortillas",
+    "brand": "Whole",
+    "category": "Bakery"
   },
   {
     "sku": "GRC-0053",
-    "name": "Land O Lakes Unsalted Butter 4ct",
-    "brand": "LandOLakes",
-    "category": "Dairy"
+    "name": "Medium Taqueria Style Chipotle Salsa",
+    "brand": "Medium",
+    "category": "Snacks"
   },
   {
     "sku": "GRC-0054",
-    "name": "Kerrygold Grass-Fed Butter 8oz",
-    "brand": "Kerrygold",
-    "category": "Dairy"
+    "name": "Cheesy Creations Roasted Garlic Parmesan Sauce",
+    "brand": "Cheesy",
+    "category": "Pantry"
   },
   {
     "sku": "GRC-0055",
-    "name": "Fresh Strawberries 1lb Clamshell",
-    "brand": "Generic",
-    "category": "Produce"
+    "name": "Ramen Noodles Soup Chicken Mushroom Flavor",
+    "brand": "Ramen",
+    "category": "Canned"
   },
   {
     "sku": "GRC-0056",
-    "name": "Broccoli Crowns 1.5lb",
-    "brand": "Generic",
-    "category": "Produce"
+    "name": "Premium Deli Oven Roasted Turkey Breast",
+    "brand": "Premium",
+    "category": "Deli"
   },
   {
     "sku": "GRC-0057",
-    "name": "Uncle Ben's Long Grain White Rice 5lb",
-    "brand": "UncleBens",
+    "name": "Organic Red Wine & Olive Oil Dressing Organic",
+    "brand": "Organic",
     "category": "Pantry"
   },
   {
     "sku": "GRC-0058",
-    "name": "Mahatma Jasmine Rice 5lb",
-    "brand": "Mahatma",
-    "category": "Pantry"
+    "name": "European Style Spring Mix",
+    "brand": "European",
+    "category": "Produce"
   },
   {
     "sku": "GRC-0059",
-    "name": "Comet Powder Cleanser 21oz",
-    "brand": "Comet",
-    "category": "Household"
+    "name": "Jelly, Blackberry",
+    "brand": "Jelly,",
+    "category": "Pantry"
   },
   {
     "sku": "GRC-0060",
-    "name": "Bar Keepers Friend 21oz",
-    "brand": "BKF",
-    "category": "Household"
+    "name": "Pancake Mix, Buttermilk",
+    "brand": "Pancake",
+    "category": "Breakfast"
   },
   {
     "sku": "GRC-0061",
-    "name": "Gold Medal All Purpose Flour 5lb",
-    "brand": "GoldMedal",
-    "category": "Pantry"
+    "name": "Vanilla with Almond Milk Iced Coffee",
+    "brand": "Vanilla",
+    "category": "Beverages"
   },
   {
     "sku": "GRC-0062",
-    "name": "King Arthur Bread Flour 5lb",
-    "brand": "KingArthur",
-    "category": "Pantry"
+    "name": "Sweet Cooking Rice Seasoning",
+    "brand": "Sweet",
+    "category": "International"
   },
   {
     "sku": "GRC-0063",
-    "name": "Parmalat Whole Milk 1L",
-    "brand": "Parmalat",
-    "category": "Dairy"
+    "name": "Ultra 7 Inch Polypropylene Traditional Plates",
+    "brand": "Ultra",
+    "category": "Household"
   },
   {
     "sku": "GRC-0064",
-    "name": "Horizon Organic 2% Milk 8pk",
-    "brand": "Horizon",
-    "category": "Dairy"
+    "name": "Jasmine Tea Unfiltered Ginger Ale",
+    "brand": "Jasmine",
+    "category": "Beverages"
   },
   {
     "sku": "GRC-0065",
-    "name": "Birds Eye Broccoli Florets 12oz",
-    "brand": "BirdsEye",
-    "category": "Frozen"
+    "name": "Artisan Chick'n & Apple Sausage",
+    "brand": "Artisan",
+    "category": "Deli"
   },
   {
     "sku": "GRC-0066",
-    "name": "Green Giant Sweet Corn 12oz",
-    "brand": "GreenGiant",
-    "category": "Frozen"
+    "name": "Hemp Protein, Organic",
+    "brand": "Hemp",
+    "category": "Personal"
   },
   {
     "sku": "GRC-0067",
-    "name": "McCormick Garlic Powder 3.12oz",
-    "brand": "McCormick",
-    "category": "Condiments"
+    "name": "Spinach Basil Garlic Linguini",
+    "brand": "Spinach",
+    "category": "Pantry"
   },
   {
     "sku": "GRC-0068",
-    "name": "Spice Islands Basil 0.5oz",
-    "brand": "SpiceIslands",
-    "category": "Condiments"
+    "name": "Coconut Chocolate Chip Energy Bar",
+    "brand": "Coconut",
+    "category": "Snacks"
   },
   {
     "sku": "GRC-0069",
-    "name": "Philadelphia Cream Cheese 8oz",
-    "brand": "Philadelphia",
-    "category": "Dairy"
+    "name": "Nutter Butter Cookie Bites Go-Pak",
+    "brand": "Nutter",
+    "category": "Snacks"
   },
   {
     "sku": "GRC-0070",
-    "name": "Kraft Cream Cheese Block 8oz",
-    "brand": "Kraft",
-    "category": "Dairy"
+    "name": "Wild Albacore Tuna No Salt Added",
+    "brand": "Wild",
+    "category": "Canned"
   },
   {
     "sku": "GRC-0071",
-    "name": "Lean Cuisine Chicken Alfredo 9oz",
-    "brand": "LeanCuisine",
-    "category": "Frozen"
+    "name": "French  Tarragon Wine Vinegar",
+    "brand": "French",
+    "category": "Pantry"
   },
   {
     "sku": "GRC-0072",
-    "name": "Marie Callender's Pot Pie 10oz",
-    "brand": "MarieCallender",
+    "name": "Blakes Chicken Parmesan Dinner",
+    "brand": "Blakes",
     "category": "Frozen"
   },
   {
     "sku": "GRC-0073",
-    "name": "Yellow Onions 3lb Bag",
-    "brand": "Generic",
-    "category": "Produce"
+    "name": "All Natural 100% Apple Juice",
+    "brand": "All",
+    "category": "Beverages"
   },
   {
     "sku": "GRC-0074",
-    "name": "Red Onions 2lb Bag",
+    "name": "100% Whole Wheat Pita Bread",
     "brand": "Generic",
-    "category": "Produce"
+    "category": "Bakery"
   },
   {
     "sku": "GRC-0075",
-    "name": "Gatorade Lemon Lime 32oz",
-    "brand": "Gatorade",
-    "category": "Beverages"
+    "name": "Lamb Shank",
+    "brand": "Lamb",
+    "category": "Meat"
   },
   {
     "sku": "GRC-0076",
-    "name": "Snapple Peach Tea 16oz",
-    "brand": "Snapple",
-    "category": "Beverages"
+    "name": "Soppressata Piccante",
+    "brand": "Soppressata",
+    "category": "Deli"
   },
   {
     "sku": "GRC-0077",
-    "name": "StarKist Chunk Light Tuna in Water 5oz",
-    "brand": "StarKist",
-    "category": "Canned"
+    "name": "Classics Earl Grey Tea",
+    "brand": "Classics",
+    "category": "Beverages"
   },
   {
     "sku": "GRC-0078",
-    "name": "Bumble Bee Solid White Albacore 5oz",
-    "brand": "BumbleBee",
-    "category": "Canned"
+    "name": "Probiotics High Potency Capsules",
+    "brand": "Probiotics",
+    "category": "Personal"
   },
   {
     "sku": "GRC-0079",
-    "name": "Dove Bar Soap 6pk 3.75oz",
-    "brand": "Dove",
-    "category": "Personal"
+    "name": "Yogurt Fruit Dip Sliced Apples",
+    "brand": "Yogurt",
+    "category": "Produce"
   },
   {
     "sku": "GRC-0080",
-    "name": "Colgate Toothpaste Total 4.8oz",
-    "brand": "Colgate",
-    "category": "Personal"
+    "name": "Smorz Cereal",
+    "brand": "Smorz",
+    "category": "Breakfast"
   },
   {
     "sku": "GRC-0081",
-    "name": "Eggo Homestyle Waffles 10ct",
-    "brand": "Eggo",
-    "category": "Frozen"
+    "name": "Kind Prenatal Once Daily",
+    "brand": "Kind",
+    "category": "Personal"
   },
   {
     "sku": "GRC-0082",
-    "name": "Aunt Jemima Buttermilk Pancake Mix 32oz",
-    "brand": "AuntJemima",
-    "category": "Breakfast"
+    "name": "Uncured Cracked Pepper Beef",
+    "brand": "Uncured",
+    "category": "Snacks"
   },
   {
     "sku": "GRC-0083",
-    "name": "Ore-Ida Golden Fries 32oz",
-    "brand": "OreIda",
-    "category": "Frozen"
+    "name": "Organic Rice Vinegar",
+    "brand": "Organic",
+    "category": "International"
   },
   {
     "sku": "GRC-0084",
-    "name": "Alexia Waffle Fries 20oz",
-    "brand": "Alexia",
-    "category": "Frozen"
+    "name": "Sprinklez Confetti Fun Organic Toppings",
+    "brand": "Sprinklez",
+    "category": "Pantry"
   },
   {
     "sku": "GRC-0085",
-    "name": "Barilla Spaghetti 16oz",
-    "brand": "Barilla",
-    "category": "Pantry"
+    "name": "Organic Chamomile Lemon Tea",
+    "brand": "Organic",
+    "category": "Beverages"
   },
   {
     "sku": "GRC-0086",
-    "name": "Ronzoni Penne Rigate 16oz",
-    "brand": "Ronzoni",
-    "category": "Pantry"
+    "name": "2% Yellow American Cheese",
+    "brand": "Generic",
+    "category": "Dairy"
   },
   {
     "sku": "GRC-0087",
-    "name": "Heinz White Vinegar 32oz",
-    "brand": "Heinz",
-    "category": "Condiments"
+    "name": "Local Living Butter Lettuce",
+    "brand": "Local",
+    "category": "Produce"
   },
   {
     "sku": "GRC-0088",
-    "name": "Bragg Apple Cider Vinegar 32oz",
-    "brand": "Bragg",
-    "category": "Condiments"
+    "name": "Peanut Butter & Strawberry Jam Sandwich",
+    "brand": "Peanut",
+    "category": "Frozen"
   },
   {
     "sku": "GRC-0089",
-    "name": "Domino Pure Cane Sugar 4lb",
-    "brand": "Domino",
-    "category": "Pantry"
+    "name": "Bread, Healthy Whole Grain",
+    "brand": "Bread,",
+    "category": "Bakery"
   },
   {
     "sku": "GRC-0090",
-    "name": "C&H Pure Cane Sugar 4lb",
-    "brand": "CH",
-    "category": "Pantry"
+    "name": "Danish Butter Cookies",
+    "brand": "Danish",
+    "category": "Snacks"
   },
   {
     "sku": "GRC-0091",
-    "name": "Kellogg's Corn Flakes 18oz",
-    "brand": "Kelloggs",
-    "category": "Breakfast"
+    "name": "Sprouted Kale Cracker",
+    "brand": "Sprouted",
+    "category": "Snacks"
   },
   {
     "sku": "GRC-0092",
-    "name": "Cheerios Original 18oz",
-    "brand": "Cheerios",
-    "category": "Breakfast"
+    "name": "High Fiber Tomato Basil Soup",
+    "brand": "High",
+    "category": "Canned"
   },
   {
     "sku": "GRC-0093",
-    "name": "Special K Original 12.2oz",
-    "brand": "Kelloggs",
-    "category": "Breakfast"
+    "name": "Easy Grab 9\\\"x13\\\" Oblong Glass Bakeware",
+    "brand": "Easy",
+    "category": "Household"
   },
   {
     "sku": "GRC-0094",
-    "name": "Folgers Classic Roast 30.5oz",
-    "brand": "Folgers",
-    "category": "Beverages"
-  },
-  {
-    "sku": "GRC-0095",
-    "name": "Maxwell House Original 30.6oz",
-    "brand": "MaxwellHouse",
-    "category": "Beverages"
-  },
-  {
-    "sku": "GRC-0096",
-    "name": "Starbucks Pike Place 12oz",
-    "brand": "Starbucks",
-    "category": "Beverages"
-  },
-  {
-    "sku": "GRC-0097",
-    "name": "Crisco Vegetable Oil 48oz",
-    "brand": "Crisco",
+    "name": "Mild Salsa Divino",
+    "brand": "Mild",
     "category": "Pantry"
   },
   {
+    "sku": "GRC-0095",
+    "name": "Organic Sprouted Barley Bread",
+    "brand": "Organic",
+    "category": "Bakery"
+  },
+  {
+    "sku": "GRC-0096",
+    "name": "Grape Leaf Hummus Wrap",
+    "brand": "Grape",
+    "category": "Deli"
+  },
+  {
+    "sku": "GRC-0097",
+    "name": "Fabric Softener, Geranium Scent",
+    "brand": "Fabric",
+    "category": "Household"
+  },
+  {
     "sku": "GRC-0098",
-    "name": "Mazola Corn Oil 40oz",
-    "brand": "Mazola",
+    "name": "Hot Tomatillo Salsa",
+    "brand": "Hot",
     "category": "Pantry"
   },
   {
     "sku": "GRC-0099",
-    "name": "Purina Cat Chow 3.15lb",
-    "brand": "Purina",
-    "category": "Pets"
+    "name": "Infant's Blend Probiotic",
+    "brand": "Infant'S",
+    "category": "Personal"
   },
   {
     "sku": "GRC-0100",
-    "name": "Fancy Feast Gravy 3oz Can",
-    "brand": "FancyFeast",
-    "category": "Pets"
+    "name": "Light Savory Beef Barley Vegetable Soup",
+    "brand": "Light",
+    "category": "Canned"
   },
   {
     "sku": "GRC-0101",
-    "name": "M&Ms Milk Chocolate 10.7oz",
-    "brand": "MMs",
+    "name": "Scooby-Doo! Fruit Flavored Snacks",
+    "brand": "Scooby-Doo!",
     "category": "Snacks"
   },
   {
     "sku": "GRC-0102",
-    "name": "Reese's Peanut Butter Cups 2pk",
-    "brand": "Reeses",
-    "category": "Snacks"
+    "name": "English Muffins",
+    "brand": "English",
+    "category": "Bakery"
   },
   {
     "sku": "GRC-0103",
-    "name": "Snickers Bar 1.86oz",
-    "brand": "Snickers",
-    "category": "Snacks"
+    "name": "Petit Suisse Fruit",
+    "brand": "Petit",
+    "category": "Dairy"
   },
   {
     "sku": "GRC-0104",
-    "name": "Hershey's Milk Chocolate Bar 1.55oz",
-    "brand": "Hersheys",
-    "category": "Snacks"
+    "name": "Ground Turkey Chub",
+    "brand": "Ground",
+    "category": "Frozen"
   },
   {
     "sku": "GRC-0105",
-    "name": "Ghirardelli Dark Chocolate 3.5oz",
-    "brand": "Ghirardelli",
-    "category": "Snacks"
+    "name": "Cauliflower Florettes",
+    "brand": "Cauliflower",
+    "category": "Produce"
   },
   {
     "sku": "GRC-0106",
-    "name": "Red Bull Energy 8.4oz Can",
-    "brand": "RedBull",
-    "category": "Beverages"
+    "name": "Sharp Cheddar",
+    "brand": "Sharp",
+    "category": "Dairy"
   },
   {
     "sku": "GRC-0107",
-    "name": "Monster Energy Original 16oz",
-    "brand": "Monster",
-    "category": "Beverages"
+    "name": "Pomegranate Molasses",
+    "brand": "Pomegranate",
+    "category": "Pantry"
   },
   {
     "sku": "GRC-0108",
-    "name": "Ben & Jerry's Chocolate Fudge Brownie Pint",
-    "brand": "BenJerrys",
-    "category": "Frozen"
+    "name": "Sherry Reserve Vinegar",
+    "brand": "Sherry",
+    "category": "Pantry"
   },
   {
     "sku": "GRC-0109",
-    "name": "Haagen-Dazs Vanilla Ice Cream 14oz",
-    "brand": "HaagenDazs",
-    "category": "Frozen"
+    "name": "Sun Cups Dark Chocolate",
+    "brand": "Sun",
+    "category": "Snacks"
   },
   {
     "sku": "GRC-0110",
-    "name": "Breyers Natural Vanilla 48oz",
-    "brand": "Breyers",
-    "category": "Frozen"
+    "name": "Herbal Armor DEET-Free Natural Insect Repellant",
+    "brand": "Herbal",
+    "category": "Personal"
   },
   {
     "sku": "GRC-0111",
-    "name": "Bounty Select-A-Size 12 Rolls",
-    "brand": "Bounty",
-    "category": "Household"
+    "name": "Hot & Spicy Chicken Flavor Ramen Noodles",
+    "brand": "Hot",
+    "category": "Pantry"
   },
   {
     "sku": "GRC-0112",
-    "name": "Scott Comfort Plus 12 Rolls",
-    "brand": "Scott",
-    "category": "Household"
+    "name": "Marscapone",
+    "brand": "Marscapone",
+    "category": "Dairy"
   },
   {
     "sku": "GRC-0113",
-    "name": "Del Monte Sweet Corn 15.25oz",
-    "brand": "DelMonte",
-    "category": "Canned"
+    "name": "Organic Wild Blueberries",
+    "brand": "Organic",
+    "category": "Frozen"
   },
   {
     "sku": "GRC-0114",
-    "name": "Bush's Best Pinto Beans 15.5oz",
-    "brand": "Bushs",
+    "name": "Traditional Chicken & Orzo with Lemon Soup",
+    "brand": "Traditional",
     "category": "Canned"
   },
   {
     "sku": "GRC-0115",
-    "name": "Lysol Toilet Bowl Cleaner 24oz",
-    "brand": "Lysol",
-    "category": "Household"
+    "name": "Vanilla Milk Chocolate Almond Ice Cream Bars Multi-Pack",
+    "brand": "Vanilla",
+    "category": "Frozen"
   },
   {
     "sku": "GRC-0116",
-    "name": "Clorox Toilet Bowl Cleaner 24oz",
-    "brand": "Clorox",
-    "category": "Household"
+    "name": "Brioche Bachelor Loaf",
+    "brand": "Brioche",
+    "category": "Bakery"
   },
   {
     "sku": "GRC-0117",
-    "name": "Dawn Dish Soap Original 19.4oz",
-    "brand": "Dawn",
-    "category": "Household"
+    "name": "Yogurt Strawberry Pomegranate",
+    "brand": "Yogurt",
+    "category": "Dairy"
   },
   {
     "sku": "GRC-0118",
-    "name": "Palmolive Dish Soap 20oz",
-    "brand": "Palmolive",
-    "category": "Household"
+    "name": "Purifying Daily Detox Scrub",
+    "brand": "Purifying",
+    "category": "Personal"
   },
   {
     "sku": "GRC-0119",
-    "name": "Tide Pods Laundry 42ct",
-    "brand": "Tide",
+    "name": "Stain Release Boost In-Wash Stain Remover Pacs",
+    "brand": "Stain",
     "category": "Household"
   },
   {
     "sku": "GRC-0120",
-    "name": "Gain Flings Laundry 42ct",
-    "brand": "Gain",
-    "category": "Household"
+    "name": "Dark Chocolate Ice Cream Topping",
+    "brand": "Dark",
+    "category": "Snacks"
   },
   {
     "sku": "GRC-0121",
-    "name": "Swiffer Sweeper Dry Refills 32ct",
-    "brand": "Swiffer",
-    "category": "Household"
+    "name": "Simple",
+    "brand": "Simple",
+    "category": "Snacks"
   },
   {
     "sku": "GRC-0122",
-    "name": "Pledge Furniture Spray 9.7oz",
-    "brand": "Pledge",
-    "category": "Household"
+    "name": "Very Vanilla Soymilk",
+    "brand": "Very",
+    "category": "Dairy"
   },
   {
     "sku": "GRC-0123",
-    "name": "Gorton's Fish Fillets 19oz",
-    "brand": "Gortons",
-    "category": "Frozen"
+    "name": "Olli Napoli Salami",
+    "brand": "Olli",
+    "category": "Deli"
   },
   {
     "sku": "GRC-0124",
-    "name": "Van de Kamp's Fish Sticks 24ct",
-    "brand": "VanddeKamps",
-    "category": "Frozen"
+    "name": "Zita Cut, No. 118",
+    "brand": "Zita",
+    "category": "Pantry"
   },
   {
     "sku": "GRC-0125",
-    "name": "Duracell AA Batteries 10ct",
-    "brand": "Duracell",
-    "category": "General"
+    "name": "Chips Onion Chipotle Garlic",
+    "brand": "Chips",
+    "category": "Snacks"
   },
   {
     "sku": "GRC-0126",
-    "name": "Energizer AA Batteries 8ct",
-    "brand": "Energizer",
-    "category": "General"
+    "name": "Restaurant Style Organic Chia & Quinoa Tortilla Chips",
+    "brand": "Restaurant",
+    "category": "Snacks"
   },
   {
     "sku": "GRC-0127",
-    "name": "Smirnoff Vodka 750ml",
-    "brand": "Smirnoff",
-    "category": "Beverages"
+    "name": "Arugula Salad",
+    "brand": "Arugula",
+    "category": "Produce"
   },
   {
     "sku": "GRC-0128",
-    "name": "Jack Daniel's Tennessee 750ml",
-    "brand": "JackDaniels",
-    "category": "Beverages"
+    "name": "Organic Lemons",
+    "brand": "Organic",
+    "category": "Produce"
   },
   {
     "sku": "GRC-0129",
-    "name": "Johnson's Baby Shampoo 13.6oz",
-    "brand": "Johnsons",
-    "category": "Babies"
+    "name": "Coarse Grind Garlic Powder & Parsley Blend",
+    "brand": "Coarse",
+    "category": "Pantry"
   },
   {
     "sku": "GRC-0130",
-    "name": "Pampers Sensitive Wipes 216ct",
-    "brand": "Pampers",
-    "category": "Babies"
+    "name": "Traditional Water Crackers",
+    "brand": "Traditional",
+    "category": "Snacks"
   },
   {
     "sku": "GRC-0131",
-    "name": "Dole Sliced Peaches 15.25oz",
-    "brand": "Dole",
-    "category": "Canned"
+    "name": "Anti Diarrheal Caplets",
+    "brand": "Anti",
+    "category": "Personal"
   },
   {
     "sku": "GRC-0132",
-    "name": "Del Monte Fruit Cocktail 15.25oz",
-    "brand": "DelMonte",
-    "category": "Canned"
+    "name": "Organic Ranch Veggie Dip",
+    "brand": "Organic",
+    "category": "Deli"
   },
   {
     "sku": "GRC-0133",
-    "name": "Oscar Mayer Deli Fresh Ham 9oz",
-    "brand": "OscarMayer",
-    "category": "Deli"
+    "name": "Nectarines",
+    "brand": "Nectarines",
+    "category": "Produce"
   },
   {
     "sku": "GRC-0134",
-    "name": "Boar's Head Honey Ham 8oz",
-    "brand": "BoarsHead",
-    "category": "Deli"
+    "name": "Wild Blueberry All Natural Fruit Spread",
+    "brand": "Wild",
+    "category": "Pantry"
   },
   {
     "sku": "GRC-0135",
-    "name": "Kraft Singles American Cheese 24ct",
-    "brand": "Kraft",
-    "category": "Dairy"
+    "name": "Aromatherapaes Stress Reducing Lavender & Chamomile Spa Bath",
+    "brand": "Aromatherapaes",
+    "category": "Personal"
   },
   {
     "sku": "GRC-0136",
-    "name": "Velveeta Original 32oz",
-    "brand": "Velveeta",
-    "category": "Dairy"
+    "name": "3 in 1 Soap for Every Man, Cucumber & Lemon",
+    "brand": "Generic",
+    "category": "Personal"
   },
   {
     "sku": "GRC-0137",
-    "name": "Vlasic Kosher Dill Pickles 32oz",
-    "brand": "Vlasic",
-    "category": "Condiments"
+    "name": "Fabric Refresher Meadows & Rain Air Freshener (1 Count, 27 oz)  Air Care",
+    "brand": "Fabric",
+    "category": "Household"
   },
   {
     "sku": "GRC-0138",
-    "name": "Mt. Olive Pickles Bread & Butter 24oz",
-    "brand": "MtOlive",
-    "category": "Condiments"
+    "name": "Corn Dogs, Mini, Honey Crunchy Flavor",
+    "brand": "Corn",
+    "category": "Frozen"
   },
   {
     "sku": "GRC-0139",
-    "name": "Atlantic Salmon Fillet 1lb",
-    "brand": "Generic",
-    "category": "Meat"
+    "name": "Artisan Ciabatta",
+    "brand": "Artisan",
+    "category": "Frozen"
   },
   {
     "sku": "GRC-0140",
-    "name": "Tilapia Fillets 2lb",
-    "brand": "Generic",
-    "category": "Meat"
+    "name": "Extra Spearmint Sugar-Free Gum",
+    "brand": "Extra",
+    "category": "Snacks"
   },
   {
     "sku": "GRC-0141",
-    "name": "French's Yellow Mustard 20oz",
-    "brand": "Frenchs",
-    "category": "Condiments"
+    "name": "Living Organic Cilantro",
+    "brand": "Living",
+    "category": "Produce"
   },
   {
     "sku": "GRC-0142",
-    "name": "Grey Poupon Dijon Mustard 10oz",
-    "brand": "GreyPoupon",
-    "category": "Condiments"
+    "name": "Smoked Ham & Oven Roasted Turkey Sub Sandwich Kit",
+    "brand": "Smoked",
+    "category": "Deli"
   },
   {
     "sku": "GRC-0143",
-    "name": "Skippy Peanut Butter Creamy 16.3oz",
-    "brand": "Skippy",
-    "category": "Spreads"
+    "name": "Calcium Adult Gummy Vitamins, Orange Cherry & Strawberry",
+    "brand": "Calcium",
+    "category": "Personal"
   },
   {
     "sku": "GRC-0144",
-    "name": "Jif Peanut Butter Creamy 16oz",
-    "brand": "Jif",
-    "category": "Spreads"
+    "name": "100% Recycled Aluminum Foil",
+    "brand": "Generic",
+    "category": "Pantry"
   },
   {
     "sku": "GRC-0145",
-    "name": "Smucker's Strawberry Jam 18oz",
-    "brand": "Smuckers",
-    "category": "Spreads"
+    "name": "Hacho Miso Aged & Fermented Soybeans",
+    "brand": "Hacho",
+    "category": "International"
   },
   {
     "sku": "GRC-0146",
-    "name": "Campbell's Tomato Soup 10.75oz",
-    "brand": "Campbells",
-    "category": "Canned"
+    "name": "Organic Mini Homestyle Waffles",
+    "brand": "Organic",
+    "category": "Frozen"
   },
   {
     "sku": "GRC-0147",
-    "name": "Progresso Chicken Noodle 18.5oz",
-    "brand": "Progresso",
-    "category": "Canned"
+    "name": "Dressing Bleu Cheese",
+    "brand": "Dressing",
+    "category": "Pantry"
   },
   {
     "sku": "GRC-0148",
-    "name": "Knorr Chicken Noodle Soup Mix 1.8oz",
-    "brand": "Knorr",
-    "category": "Canned"
+    "name": "Peanut Butter Cacao Quinoa Clusters",
+    "brand": "Peanut",
+    "category": "Snacks"
   },
   {
     "sku": "GRC-0149",
-    "name": "Heinz Tomato Ketchup 32oz Bottle",
-    "brand": "Heinz",
-    "category": "Condiments"
+    "name": "Wild Chanterelle Mushroom Ravioli",
+    "brand": "Wild",
+    "category": "Pantry"
   },
   {
     "sku": "GRC-0150",
-    "name": "Hunt's Ketchup 24oz Bottle",
-    "brand": "Hunts",
-    "category": "Condiments"
+    "name": "Garlic Parmesan Pita Bread Chips",
+    "brand": "Garlic",
+    "category": "Snacks"
   },
   {
     "sku": "GRC-0151",
-    "name": "Lay's Classic Chips 8oz Bag",
-    "brand": "Lays",
-    "category": "Snacks"
+    "name": "Sparkling Blush Grape Juice",
+    "brand": "Sparkling",
+    "category": "Beverages"
   },
   {
     "sku": "GRC-0152",
-    "name": "Pringles Original 5.96oz Can",
-    "brand": "Pringles",
-    "category": "Snacks"
+    "name": "Halves & Pieces Walnuts",
+    "brand": "Halves",
+    "category": "Pantry"
   },
   {
     "sku": "GRC-0153",
-    "name": "Doritos Nacho Cheese 9.75oz",
-    "brand": "Doritos",
-    "category": "Snacks"
+    "name": "Extra Sharp Cheddar Cheese",
+    "brand": "Extra",
+    "category": "Dairy"
   },
   {
     "sku": "GRC-0154",
-    "name": "Hellmann's Real Mayonnaise 30oz",
-    "brand": "Hellmanns",
-    "category": "Condiments"
+    "name": "Single Herbs Ginkgo Leaf Dietary Supplement",
+    "brand": "Single",
+    "category": "Personal"
   },
   {
     "sku": "GRC-0155",
-    "name": "Duke's Mayonnaise 32oz",
-    "brand": "Dukes",
-    "category": "Condiments"
+    "name": "Steakhouse Onion Burger with Garlic Seasoning",
+    "brand": "Steakhouse",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0156",
+    "name": "Gluten Free All Natural Chocolate Chip Cookies",
+    "brand": "Gluten",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0157",
+    "name": "Habanero Lime Shrimp Flavor Ramen Noodle Soup",
+    "brand": "Habanero",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0158",
+    "name": "Vanishing Acne Treatment Cream",
+    "brand": "Vanishing",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0159",
+    "name": "T Bone Steak",
+    "brand": "T",
+    "category": "Meat"
+  },
+  {
+    "sku": "GRC-0160",
+    "name": "Original Turkey",
+    "brand": "Original",
+    "category": "Deli"
+  },
+  {
+    "sku": "GRC-0161",
+    "name": "Citrus Terere Yerba Mate",
+    "brand": "Citrus",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0162",
+    "name": "Vegan Santa Fe Style Flour Tortilla Rolled Tacos",
+    "brand": "Vegan",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0163",
+    "name": "Penne Rigate With Spinach",
+    "brand": "Penne",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0164",
+    "name": "Simply Beyond Black Bean Tortilla Chips",
+    "brand": "Simply",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0165",
+    "name": "Country Style Baked Beans",
+    "brand": "Country",
+    "category": "Canned"
+  },
+  {
+    "sku": "GRC-0166",
+    "name": "Acti-Fresh Body Shape Long Unscented To Go Panty Liners",
+    "brand": "Acti-Fresh",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0167",
+    "name": "Cookie Dough Performance Energy",
+    "brand": "Cookie",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0168",
+    "name": "Kisses Milk Chocolate Candy",
+    "brand": "Kisses",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0169",
+    "name": "Chicken Nugget Meal",
+    "brand": "Chicken",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0170",
+    "name": "Fresh Scent Dishwasher Detergent with Dawn",
+    "brand": "Fresh",
+    "category": "Household"
+  },
+  {
+    "sku": "GRC-0171",
+    "name": "Wild Sardines in Marinara Sauce",
+    "brand": "Wild",
+    "category": "Canned"
+  },
+  {
+    "sku": "GRC-0172",
+    "name": "Mild El Nino Salsa",
+    "brand": "Mild",
+    "category": "Deli"
+  },
+  {
+    "sku": "GRC-0173",
+    "name": "Healthfull Nuts & Seeds Bread",
+    "brand": "Healthfull",
+    "category": "Bakery"
+  },
+  {
+    "sku": "GRC-0174",
+    "name": "Classic Culinary Low Sodium Vegetable Broth",
+    "brand": "Classic",
+    "category": "Canned"
+  },
+  {
+    "sku": "GRC-0175",
+    "name": "Medium Spicy Butter Chicken Simmer Sauce",
+    "brand": "Medium",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0176",
+    "name": "Israeli Style Gefilte Fish",
+    "brand": "Israeli",
+    "category": "International"
+  },
+  {
+    "sku": "GRC-0177",
+    "name": "fruitwater\u00ae Strawberry Kiwi Sparkling Water",
+    "brand": "Generic",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0178",
+    "name": "Lamb Rib Chops",
+    "brand": "Lamb",
+    "category": "Meat"
+  },
+  {
+    "sku": "GRC-0179",
+    "name": "Grade A Pasteurized 2% Milkfat Lowfat Cottage Cheese with Pineapple",
+    "brand": "Grade",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0180",
+    "name": "Soda",
+    "brand": "Soda",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0181",
+    "name": "Cold Brew Coffee Tahitian Vanilla",
+    "brand": "Cold",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0182",
+    "name": "Tzatziki Cucumber Sauce",
+    "brand": "Tzatziki",
+    "category": "Deli"
+  },
+  {
+    "sku": "GRC-0183",
+    "name": "Herb Thyme Clamshell",
+    "brand": "Herb",
+    "category": "Produce"
+  },
+  {
+    "sku": "GRC-0184",
+    "name": "Radiant Pantiliners Regular Wrapped Unscented",
+    "brand": "Radiant",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0185",
+    "name": "Sloppy Joe",
+    "brand": "Sloppy",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0186",
+    "name": "Spinach & Feta Pierogi",
+    "brand": "Spinach",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0187",
+    "name": "Rescue Remedy, Spray",
+    "brand": "Rescue",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0188",
+    "name": "Free & Clear Natural Laundry Detergent For Sensitive Skin",
+    "brand": "Free",
+    "category": "Household"
+  },
+  {
+    "sku": "GRC-0189",
+    "name": "Chocolate Mint Cookie Crunch Nutrition Bar",
+    "brand": "Chocolate",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0190",
+    "name": "Roasted Vegetable Souffl\u00e9",
+    "brand": "Roasted",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0191",
+    "name": "Minis Candy Bars",
+    "brand": "Minis",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0192",
+    "name": "Vanilla Almond Cashew Almondmilk Cashewmilk Blend",
+    "brand": "Vanilla",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0193",
+    "name": "Italian Pasta Salad",
+    "brand": "Italian",
+    "category": "Deli"
+  },
+  {
+    "sku": "GRC-0194",
+    "name": "Homemade Hot Arrabbiata Fra Diavolo Sauce",
+    "brand": "Homemade",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0195",
+    "name": "Gluten Free Organic Cereal Coconut Maple Vanilla",
+    "brand": "Gluten",
+    "category": "Breakfast"
+  },
+  {
+    "sku": "GRC-0196",
+    "name": "Organic Blue Corn Sea Salt Tortilla Chips",
+    "brand": "Organic",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0197",
+    "name": "Tapatio Salsa Picante Hot Sauce Tortilla Chips",
+    "brand": "Tapatio",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0198",
+    "name": "Argan Oil of Morocco Renewing Weightless Healing Dry Oil Hair Oil",
+    "brand": "Argan",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0199",
+    "name": "Sambal Oelek Ground Fresh Chili Paste",
+    "brand": "Sambal",
+    "category": "International"
+  },
+  {
+    "sku": "GRC-0200",
+    "name": "Gluten Free Oatmeal, Variety Pack",
+    "brand": "Gluten",
+    "category": "Breakfast"
+  },
+  {
+    "sku": "GRC-0201",
+    "name": "String Cheese, Mozzarella",
+    "brand": "String",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0202",
+    "name": "6\\\" Organic Carrot Cake",
+    "brand": "Generic",
+    "category": "Bakery"
+  },
+  {
+    "sku": "GRC-0203",
+    "name": "Tegaderm Waterproof Transparent Dressing",
+    "brand": "Tegaderm",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0204",
+    "name": "Cayenne Lemonade Made With Raw Tristate Honey",
+    "brand": "Cayenne",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0205",
+    "name": "Honey Nut Oatmeal Squares",
+    "brand": "Honey",
+    "category": "Breakfast"
+  },
+  {
+    "sku": "GRC-0206",
+    "name": "Kiwi Strawberry Sparkling Water",
+    "brand": "Kiwi",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0207",
+    "name": "Foaming Hand Soap Kid Watermelon",
+    "brand": "Foaming",
+    "category": "Household"
+  },
+  {
+    "sku": "GRC-0208",
+    "name": "3 Seed Blue Corn Dipping Chips",
+    "brand": "Generic",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0209",
+    "name": "Shaved Parmesan Cheese",
+    "brand": "Shaved",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0210",
+    "name": "Triple Chocolate Snack Size",
+    "brand": "Triple",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0211",
+    "name": "Organic Soups Lentil",
+    "brand": "Organic",
+    "category": "Canned"
+  },
+  {
+    "sku": "GRC-0212",
+    "name": "EcoNet Recycled Bath Sponge",
+    "brand": "Econet",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0213",
+    "name": "Vanilla Cream Soda",
+    "brand": "Vanilla",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0214",
+    "name": "Low Sodium Turkey",
+    "brand": "Low",
+    "category": "Meat"
+  },
+  {
+    "sku": "GRC-0215",
+    "name": "Blue Bottle Coffee Frozen Bar",
+    "brand": "Blue",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0216",
+    "name": "Chinese Breakfast Black Tea",
+    "brand": "Chinese",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0217",
+    "name": "Gluten Free Blueberry Muffin Mix",
+    "brand": "Gluten",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0218",
+    "name": "Brambleberry Herbal Tea",
+    "brand": "Brambleberry",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0219",
+    "name": "Alpha-Bits Multigrain Cereal",
+    "brand": "Alpha-Bits",
+    "category": "Breakfast"
+  },
+  {
+    "sku": "GRC-0220",
+    "name": "Chicharrones Picante Flavor Pork Rinds",
+    "brand": "Chicharrones",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0221",
+    "name": "Nature's Seasons Seasoning Blend",
+    "brand": "Nature'S",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0222",
+    "name": "Shrimp with Pasta & Vegetables",
+    "brand": "Shrimp",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0223",
+    "name": "Original Red Twists",
+    "brand": "Original",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0224",
+    "name": "Taco Reduced Sodium Seasoning Mix",
+    "brand": "Taco",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0225",
+    "name": "Organic Roasted Garlic Pasta Sauce",
+    "brand": "Organic",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0226",
+    "name": "Poppy Seed Bagels",
+    "brand": "Poppy",
+    "category": "Bakery"
+  },
+  {
+    "sku": "GRC-0227",
+    "name": "Triple-Acting Laundry Stain Remover",
+    "brand": "Triple-Acting",
+    "category": "Household"
+  },
+  {
+    "sku": "GRC-0228",
+    "name": "Perfectly Thymed Pita Crisps Baked",
+    "brand": "Perfectly",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0229",
+    "name": "Dried Sweetened Cranberries",
+    "brand": "Dried",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0230",
+    "name": "Authentic Deep Dish, Spinach & Garlic Pizza",
+    "brand": "Authentic",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0231",
+    "name": "Extra Strength Melatonin Adult Gummies",
+    "brand": "Extra",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0232",
+    "name": "Waffles, Red Berry",
+    "brand": "Waffles,",
+    "category": "Breakfast"
+  },
+  {
+    "sku": "GRC-0233",
+    "name": "Organic Vegetable Greens & Greens Juice Blend",
+    "brand": "Organic",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0234",
+    "name": "Honey Mustard",
+    "brand": "Honey",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0235",
+    "name": "Cold Remedy, Quick Dissolve Tablets, Cherry Flavor",
+    "brand": "Cold",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0236",
+    "name": "Island Fruits Fruit Snacks",
+    "brand": "Island",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0237",
+    "name": "Key Lime Soda",
+    "brand": "Key",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0238",
+    "name": "Vegetable Pot Pie",
+    "brand": "Vegetable",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0239",
+    "name": "Imported Italian Solid Light Tuna In Pure Olive Oil",
+    "brand": "Imported",
+    "category": "Canned"
+  },
+  {
+    "sku": "GRC-0240",
+    "name": "Cantaloupe",
+    "brand": "Cantaloupe",
+    "category": "Produce"
+  },
+  {
+    "sku": "GRC-0241",
+    "name": "Organic Southwestern Burrito",
+    "brand": "Organic",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0242",
+    "name": "Petite Dill Pickles",
+    "brand": "Petite",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0243",
+    "name": "Red Food Color",
+    "brand": "Red",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0244",
+    "name": "Non-Fat Blueberry on the Bottom Greek Yogurt",
+    "brand": "Non-Fat",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0245",
+    "name": "Glass Storage Container with Green Silicone Protection",
+    "brand": "Glass",
+    "category": "Household"
+  },
+  {
+    "sku": "GRC-0246",
+    "name": "Rio Berry",
+    "brand": "Rio",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0247",
+    "name": "Triple Chocolate Ripple",
+    "brand": "Triple",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0248",
+    "name": "Sponge Mop",
+    "brand": "Sponge",
+    "category": "Household"
+  },
+  {
+    "sku": "GRC-0249",
+    "name": "Stuffed Crust Five Cheese Pizza",
+    "brand": "Stuffed",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0250",
+    "name": "OneZip Storage Bags Quart Size Value Pack",
+    "brand": "Onezip",
+    "category": "Household"
+  },
+  {
+    "sku": "GRC-0251",
+    "name": "TAI PEI      14OZ.SWEET & SOUR CHKN",
+    "brand": "Tai",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0252",
+    "name": "Propolis Herbal Supplement",
+    "brand": "Propolis",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0253",
+    "name": "Thin Stackers Brown Rice  Salt Free",
+    "brand": "Thin",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0254",
+    "name": "Snack Bags",
+    "brand": "Snack",
+    "category": "Household"
+  },
+  {
+    "sku": "GRC-0255",
+    "name": "Caramel Sauce",
+    "brand": "Caramel",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0256",
+    "name": "French Vanilla Ice Cream",
+    "brand": "French",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0257",
+    "name": "Diet Root Beer",
+    "brand": "Diet",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0258",
+    "name": "Instant Mashed Potatoes",
+    "brand": "Instant",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0259",
+    "name": "Everyday Detox Dandelion Tea",
+    "brand": "Everyday",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0260",
+    "name": "Makeup Remover Cleansing Towelettes",
+    "brand": "Makeup",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0261",
+    "name": "Chai Tea Bags",
+    "brand": "Chai",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0262",
+    "name": "Organic Whole Wheat Elbows",
+    "brand": "Organic",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0263",
+    "name": "Organic Spicy Heirloom Marinara Sauce",
+    "brand": "Organic",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0264",
+    "name": "Mini Nilla Wafers Munch Pack",
+    "brand": "Mini",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0265",
+    "name": "Lite Poppy Seed Dressing Lite",
+    "brand": "Lite",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0266",
+    "name": "Turkey",
+    "brand": "Turkey",
+    "category": "Deli"
+  },
+  {
+    "sku": "GRC-0267",
+    "name": "Original Sprouted Grains Protein & Fiber Hot Oatmeal",
+    "brand": "Original",
+    "category": "Breakfast"
+  },
+  {
+    "sku": "GRC-0268",
+    "name": "100% Juice No Sugar Added Fruit Punch",
+    "brand": "Generic",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0269",
+    "name": "Organic Peppermint Lemonade",
+    "brand": "Organic",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0270",
+    "name": "Mint Dental Floss",
+    "brand": "Mint",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0271",
+    "name": "Fresh Multi-Purpose Contact Lens Solution",
+    "brand": "Fresh",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0272",
+    "name": "Minis Original Saltine Crackers",
+    "brand": "Minis",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0273",
+    "name": "Chewables Extra Strength Cherry Creme - 48 CT",
+    "brand": "Chewables",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0274",
+    "name": "For Men Odor Armor Body Wash",
+    "brand": "For",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0275",
+    "name": "Brisk With Lemon Iced Tea",
+    "brand": "Brisk",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0276",
+    "name": "Organic Apple Spinach Kale Coconut Water Superjuice",
+    "brand": "Organic",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0277",
+    "name": "Organic Enriched Unbleached White Flour",
+    "brand": "Organic",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0278",
+    "name": "Biotin 10,000mcg Maximum Strength",
+    "brand": "Biotin",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0279",
+    "name": "Candy, Original",
+    "brand": "Candy,",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0280",
+    "name": "Dry Roasted Pistachios",
+    "brand": "Dry",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0281",
+    "name": "Wild Forest Raw Neem Honey",
+    "brand": "Wild",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0282",
+    "name": "Gold Potatoes",
+    "brand": "Gold",
+    "category": "Produce"
+  },
+  {
+    "sku": "GRC-0283",
+    "name": "Precious Mozzarella Cheese",
+    "brand": "Precious",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0284",
+    "name": "Advanced Haircare Color Vibrancy Nourishing Shampoo",
+    "brand": "Advanced",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0285",
+    "name": "Crackers, Puffed, Corn, Quinoa & Sesame",
+    "brand": "Crackers,",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0286",
+    "name": "Naturals Savory Turkey Breakfast Sausage",
+    "brand": "Naturals",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0287",
+    "name": "Juicing Carrots",
+    "brand": "Juicing",
+    "category": "Produce"
+  },
+  {
+    "sku": "GRC-0288",
+    "name": "Peppermint/Banana Split Variety Pack Frozen Dairy Dessert Cones",
+    "brand": "Peppermint/Banana",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0289",
+    "name": "Extra Whitening Multi-Benefit Fluoride Toothpaste",
+    "brand": "Extra",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0290",
+    "name": "Creamy Italian Dressing Marinade",
+    "brand": "Creamy",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0291",
+    "name": "Revive Anti-Perspirant Deodorant",
+    "brand": "Revive",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0292",
+    "name": "Best Grains Honey & Crunch Oat Bread",
+    "brand": "Best",
+    "category": "Bakery"
+  },
+  {
+    "sku": "GRC-0293",
+    "name": "Apple Cinnamon Crisp Candle",
+    "brand": "Apple",
+    "category": "Household"
+  },
+  {
+    "sku": "GRC-0294",
+    "name": "Steamfresh Chef's Favorites Lightly Sauced Roasted Red Potatoes & Green Beans",
+    "brand": "Steamfresh",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0295",
+    "name": "Glycerine Soap, Pure and Natural, Cucumber",
+    "brand": "Glycerine",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0296",
+    "name": "Echinacea Goldenseal Alcohol Free Extract",
+    "brand": "Echinacea",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0297",
+    "name": "Brooklyn Pizza Dough",
+    "brand": "Brooklyn",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0298",
+    "name": "Natural Food Color Packets",
+    "brand": "Natural",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0299",
+    "name": "Strong & Kind Roasted Jalapeno Almond Protein Bar",
+    "brand": "Strong",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0300",
+    "name": "Veggie-Style Mini Corn Dogs",
+    "brand": "Veggie-Style",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0301",
+    "name": "Deluxe Sauce Made with 2% Milk Cheese Macaroni & Cheese Dinner",
+    "brand": "Deluxe",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0302",
+    "name": "Green Peas, Organic, Petite",
+    "brand": "Green",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0303",
+    "name": "Disinfectant Spray Cherry Blossom & Pomegranate Scent",
+    "brand": "Disinfectant",
+    "category": "Household"
+  },
+  {
+    "sku": "GRC-0304",
+    "name": "Organic Whole Grassmilk Milk",
+    "brand": "Organic",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0305",
+    "name": "Chilpotles in Adobo Sauce",
+    "brand": "Chilpotles",
+    "category": "International"
+  },
+  {
+    "sku": "GRC-0306",
+    "name": "Organic Lemon Gingersnap",
+    "brand": "Organic",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0307",
+    "name": "Raspberry Fig Bars",
+    "brand": "Raspberry",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0308",
+    "name": "Basil Daly Bar Soap",
+    "brand": "Basil",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0309",
+    "name": "Sparkling Raspberry Lemonade Water Beverage",
+    "brand": "Sparkling",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0310",
+    "name": "Blueberry Kombucha",
+    "brand": "Blueberry",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0311",
+    "name": "Black Currant Kombucha",
+    "brand": "Black",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0312",
+    "name": "Soap, Pure-Castile, 18-in-1 Hemp, Lavender",
+    "brand": "Soap,",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0313",
+    "name": "Yahrzeit Light Memorial Candle",
+    "brand": "Yahrzeit",
+    "category": "International"
+  },
+  {
+    "sku": "GRC-0314",
+    "name": "Creamline Yogurt Wild Blueberry",
+    "brand": "Creamline",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0315",
+    "name": "Eco-Pac Kamut Puffs Cereal",
+    "brand": "Eco-Pac",
+    "category": "Breakfast"
+  },
+  {
+    "sku": "GRC-0316",
+    "name": "Cheese Creations Four Cheese Cheese Sauce",
+    "brand": "Cheese",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0317",
+    "name": "Organic Whole Peeled Baby Carrots",
+    "brand": "Organic",
+    "category": "Produce"
+  },
+  {
+    "sku": "GRC-0318",
+    "name": "Lime Sherbet",
+    "brand": "Lime",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0319",
+    "name": "Extra Strength Berry",
+    "brand": "Extra",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0320",
+    "name": "Sunflower Bread",
+    "brand": "Sunflower",
+    "category": "Bakery"
+  },
+  {
+    "sku": "GRC-0321",
+    "name": "Vegetable Salad Kit, Sweet Kale",
+    "brand": "Vegetable",
+    "category": "Produce"
+  },
+  {
+    "sku": "GRC-0322",
+    "name": "Super Slimming Herbal Tea",
+    "brand": "Super",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0323",
+    "name": "Organic Granulated Tapioca",
+    "brand": "Organic",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0324",
+    "name": "Go Fresh Nutrium Moisture Body Wash Blue Fig & Orange Blossom Scent",
+    "brand": "Go",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0325",
+    "name": "Colby Jack & Mild Cheddar Combo Pack",
+    "brand": "Colby",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0326",
+    "name": "Tzatziki Greek Yogurt Dip",
+    "brand": "Tzatziki",
+    "category": "Deli"
+  },
+  {
+    "sku": "GRC-0327",
+    "name": "Twist n Loc Small Round Containers + Lids",
+    "brand": "Twist",
+    "category": "Household"
+  },
+  {
+    "sku": "GRC-0328",
+    "name": "Ground Flaxseed With Mixed Berries",
+    "brand": "Ground",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0329",
+    "name": "Ristorante Pizza Spinaci Thin Crust Pizza",
+    "brand": "Ristorante",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0330",
+    "name": "White Writing Gel",
+    "brand": "White",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0331",
+    "name": "Frozen All Butter Pound Cake",
+    "brand": "Frozen",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0332",
+    "name": "Deli Thin-Sliced Honey Ham",
+    "brand": "Deli",
+    "category": "Deli"
+  },
+  {
+    "sku": "GRC-0333",
+    "name": "Whole Wheat Spanakopita",
+    "brand": "Whole",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0334",
+    "name": "Day and Night Multi-Symptom and Severe Cold & Cough Pain Reliever/Fever Reducer",
+    "brand": "Day",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0335",
+    "name": "Pound Cake Cake Mix",
+    "brand": "Pound",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0336",
+    "name": "Water Crackers Original All Natural",
+    "brand": "Water",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0337",
+    "name": "Greener Selection Salad",
+    "brand": "Greener",
+    "category": "Produce"
+  },
+  {
+    "sku": "GRC-0338",
+    "name": "Cheerios Cereal",
+    "brand": "Cheerios",
+    "category": "Breakfast"
+  },
+  {
+    "sku": "GRC-0339",
+    "name": "Vitamin C 1000 Mg Tropical Drink Mix Dietary Supplement",
+    "brand": "Vitamin",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0340",
+    "name": "Ultimate Omega 1000 mg Lemon Soft Gels",
+    "brand": "Ultimate",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0341",
+    "name": "Fabric Softener Dryer Sheet Free & Gentle 200CT Fabric Enhancers",
+    "brand": "Fabric",
+    "category": "Household"
+  },
+  {
+    "sku": "GRC-0342",
+    "name": "New Mexico Chili",
+    "brand": "New",
+    "category": "International"
+  },
+  {
+    "sku": "GRC-0343",
+    "name": "Chocolate Caramel Whey Protein Bar",
+    "brand": "Chocolate",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0344",
+    "name": "Juniper Berry Soda",
+    "brand": "Juniper",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0345",
+    "name": "Moisture Rich Sweet Orange & Argan Conditioner",
+    "brand": "Moisture",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0346",
+    "name": "Honey Glazed Carrots",
+    "brand": "Honey",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0347",
+    "name": "Sliced Kosher Salami",
+    "brand": "Sliced",
+    "category": "Deli"
+  },
+  {
+    "sku": "GRC-0348",
+    "name": "Multigrain Spaghetti Style Pasta",
+    "brand": "Multigrain",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0349",
+    "name": "Even & Bright Pink Lemon and Mandarin Orange Body Wash",
+    "brand": "Even",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0350",
+    "name": "Powerball Quantum Max Shine & Protect Automatic Dishwasher Detergent",
+    "brand": "Powerball",
+    "category": "Household"
+  },
+  {
+    "sku": "GRC-0351",
+    "name": "Clementine Bag",
+    "brand": "Clementine",
+    "category": "Produce"
+  },
+  {
+    "sku": "GRC-0352",
+    "name": "Toaster Pops Strawberry",
+    "brand": "Toaster",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0353",
+    "name": "Sugar Free Mint Patties",
+    "brand": "Sugar",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0354",
+    "name": "Breaded Chicken Breast Tenders",
+    "brand": "Breaded",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0355",
+    "name": "EverCurl Hydracharge Conditioner",
+    "brand": "Evercurl",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0356",
+    "name": "Liquid Drink Mix Blackberry Lemonade",
+    "brand": "Liquid",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0357",
+    "name": "Chocolate Brownie Flavor Protein Bar",
+    "brand": "Chocolate",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0358",
+    "name": "Stove Top Stuffing Mix for Turkey",
+    "brand": "Stove",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0359",
+    "name": "Mache Blend",
+    "brand": "Mache",
+    "category": "Produce"
+  },
+  {
+    "sku": "GRC-0360",
+    "name": "Super Enzymes",
+    "brand": "Super",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0361",
+    "name": "Organic Yukon Gold Potato Bag",
+    "brand": "Organic",
+    "category": "Produce"
+  },
+  {
+    "sku": "GRC-0362",
+    "name": "OPA Greek Yogurt Ranch Dressing",
+    "brand": "Opa",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0363",
+    "name": "Phoenix Anti-Perspirant & Deodorant Stick Twin Pack",
+    "brand": "Phoenix",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0364",
+    "name": "Aquaphor Healing Ointment",
+    "brand": "Aquaphor",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0365",
+    "name": "Sweet Cream Buttermilk Powder",
+    "brand": "Sweet",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0366",
+    "name": "Cashews Natural Unsalted",
+    "brand": "Cashews",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0367",
+    "name": "Pure Granulated Cane Sugar",
+    "brand": "Pure",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0368",
+    "name": "Organic Hard Candy Blood Orange and Honey",
+    "brand": "Organic",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0369",
+    "name": "Organic Strawberry Lemon-ade",
+    "brand": "Organic",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0370",
+    "name": "Grass-Fed Yogurt Blueberry Cardamom",
+    "brand": "Grass-Fed",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0371",
+    "name": "Flat Floss, Antiplaque, Naturally Waxed, Spearmint",
+    "brand": "Flat",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0372",
+    "name": "100% Pure Beef Homestyle Patties",
+    "brand": "Generic",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0373",
+    "name": "Ultra Thin Pastrami",
+    "brand": "Ultra",
+    "category": "Deli"
+  },
+  {
+    "sku": "GRC-0374",
+    "name": "Reg; Organic Apple Cider Vinegar 16 Fl Oz",
+    "brand": "Reg;",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0375",
+    "name": "100% Organic Diced Tomatoes",
+    "brand": "Generic",
+    "category": "Canned"
+  },
+  {
+    "sku": "GRC-0376",
+    "name": "Vanilla Almond Protein Bar",
+    "brand": "Vanilla",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0377",
+    "name": "Almond Glow Almond Body Lotion/Massage Oil",
+    "brand": "Almond",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0378",
+    "name": "Pink Vitamin C 1000 Mg Pink Lemonade Drink Mix",
+    "brand": "Pink",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0379",
+    "name": "Original Bite Size Candies Natural & Artificial Flavors Fun Size",
+    "brand": "Original",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0380",
+    "name": "Holiday Sugar Plum Spice Herbal Tea",
+    "brand": "Holiday",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0381",
+    "name": "Super Plus Cardboard Applicator Unscented Tampons",
+    "brand": "Super",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0382",
+    "name": "Brazilian Keratin & Argan Oil Leave-In Conditioning & Styling Elixir",
+    "brand": "Brazilian",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0383",
+    "name": "Dual Action Beta Immune and Anti-Oxidant Effervescent Citrus",
+    "brand": "Dual",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0384",
+    "name": "Gluten Free Chicken Rustica Pizza",
+    "brand": "Gluten",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0385",
+    "name": "16 oz Cold Cups",
+    "brand": "Generic",
+    "category": "Household"
+  },
+  {
+    "sku": "GRC-0386",
+    "name": "Laundry Soil Stain Remover",
+    "brand": "Laundry",
+    "category": "Household"
+  },
+  {
+    "sku": "GRC-0387",
+    "name": "Whole Grain Linguine Pasta",
+    "brand": "Whole",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0388",
+    "name": "Light & Fit Strawberry Cheesecake Greek Nonfat Yogurt",
+    "brand": "Light",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0389",
+    "name": "International Cafe French Vanilla Mix",
+    "brand": "International",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0390",
+    "name": "Garlic & Herb Fresh Goat Cheese",
+    "brand": "Garlic",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0391",
+    "name": "Mix-Up Flamin' Hot & Cheezy Mix Flavored Snack Mix",
+    "brand": "Mix-Up",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0392",
+    "name": "Red Jalapeno Caesar Dressing",
+    "brand": "Red",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0393",
+    "name": "Linguine Pasta",
+    "brand": "Linguine",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0394",
+    "name": "Sardines in Water Salt Added",
+    "brand": "Sardines",
+    "category": "International"
+  },
+  {
+    "sku": "GRC-0395",
+    "name": "Italian Style Panko Breadcrumbs",
+    "brand": "Italian",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0396",
+    "name": "Everyday Mega Pack Paper Plates",
+    "brand": "Everyday",
+    "category": "Household"
+  },
+  {
+    "sku": "GRC-0397",
+    "name": "Dark Red Kidney Beans",
+    "brand": "Dark",
+    "category": "Canned"
+  },
+  {
+    "sku": "GRC-0398",
+    "name": "Ice Cream, Cookies & Cream",
+    "brand": "Ice",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0399",
+    "name": "Vanilla Almond Breeze Almond Milk",
+    "brand": "Vanilla",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0400",
+    "name": "Organic Whole Granulation Roasted Buckwheat Groats",
+    "brand": "Organic",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0401",
+    "name": "Beach Sage Liquid Fabric Softener",
+    "brand": "Beach",
+    "category": "Household"
+  },
+  {
+    "sku": "GRC-0402",
+    "name": "Dark Chocolate Raisins",
+    "brand": "Dark",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0403",
+    "name": "Petite Brussels Sprouts",
+    "brand": "Petite",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0404",
+    "name": "Special K Vanilla Cappuccino Protein Breakfast Shakes",
+    "brand": "Special",
+    "category": "Breakfast"
+  },
+  {
+    "sku": "GRC-0405",
+    "name": "Crispy Cinnamon Pear Chips",
+    "brand": "Crispy",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0406",
+    "name": "Antioxidant Cranberry Body Wash",
+    "brand": "Antioxidant",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0407",
+    "name": "Ultra Power Plus Laundry Detergent 54 loads",
+    "brand": "Ultra",
+    "category": "Household"
+  },
+  {
+    "sku": "GRC-0408",
+    "name": "Special Recipe Italian Bread",
+    "brand": "Special",
+    "category": "Bakery"
+  },
+  {
+    "sku": "GRC-0409",
+    "name": "Almond Honey Protein+ Bar",
+    "brand": "Almond",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0410",
+    "name": "Blueberry Pomegranate Aca\u00ed Cultured Goat Milk Kefir",
+    "brand": "Blueberry",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0411",
+    "name": "Tea, Superflower, Hibiscus, Blueberry, Caffeine-Free, Bags",
+    "brand": "Tea,",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0412",
+    "name": "White Chicken Chili",
+    "brand": "White",
+    "category": "Canned"
+  },
+  {
+    "sku": "GRC-0413",
+    "name": "Chips Ahoy! Chewy Cookies",
+    "brand": "Chips",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0414",
+    "name": "Chow Mein Thin Noodles",
+    "brand": "Chow",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0415",
+    "name": "Almond Spread, Dark Chocolate",
+    "brand": "Almond",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0416",
+    "name": "Sleepytime Sinus Soother Herbal Tea",
+    "brand": "Sleepytime",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0417",
+    "name": "Hummus Wrap",
+    "brand": "Hummus",
+    "category": "Deli"
+  },
+  {
+    "sku": "GRC-0418",
+    "name": "Sloppy Joe Sauce",
+    "brand": "Sloppy",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0419",
+    "name": "Ibuprofen Liquid Gels",
+    "brand": "Ibuprofen",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0420",
+    "name": "Sparkling Blueberry",
+    "brand": "Sparkling",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0421",
+    "name": "Whole Wheat Fig Bar",
+    "brand": "Whole",
+    "category": "Breakfast"
+  },
+  {
+    "sku": "GRC-0422",
+    "name": "Total Advanced Floss Tip Medium Toothbrush",
+    "brand": "Total",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0423",
+    "name": "Honey Vanilla Greek Yogurt",
+    "brand": "Honey",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0424",
+    "name": "Acai Dragonfruit Melon Green Tea",
+    "brand": "Acai",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0425",
+    "name": "Sore Throat Wild Cherry Lozenges",
+    "brand": "Sore",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0426",
+    "name": "Fiber 4g Gummy Dietary Supplement",
+    "brand": "Fiber",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0427",
+    "name": "Salt Free Seasoning",
+    "brand": "Salt",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0428",
+    "name": "Liquid Water Enhancer Peach Green Tea With Ginseng & Honey",
+    "brand": "Liquid",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0429",
+    "name": "100% Natural Just Peaches",
+    "brand": "Generic",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0430",
+    "name": "Old Fashioned Vegetable Beef Soup",
+    "brand": "Old",
+    "category": "Canned"
+  },
+  {
+    "sku": "GRC-0431",
+    "name": "Soup, Lower Sodium, Organic, Split Pea",
+    "brand": "Soup,",
+    "category": "Canned"
+  },
+  {
+    "sku": "GRC-0432",
+    "name": "Kabocha Squash",
+    "brand": "Kabocha",
+    "category": "Produce"
+  },
+  {
+    "sku": "GRC-0433",
+    "name": "Whipping Cream",
+    "brand": "Whipping",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0434",
+    "name": "Half 'n Half Lemonade Tea",
+    "brand": "Half",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0435",
+    "name": "Plastic Measuring Cups",
+    "brand": "Plastic",
+    "category": "Household"
+  },
+  {
+    "sku": "GRC-0436",
+    "name": "Lavender Body Wash",
+    "brand": "Lavender",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0437",
+    "name": "Chub Mackerel",
+    "brand": "Chub",
+    "category": "Canned"
+  },
+  {
+    "sku": "GRC-0438",
+    "name": "Naturally Aged Cheddar Cheese Block Hot Habanero",
+    "brand": "Naturally",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0439",
+    "name": "Organic Pitted Kalamata Olives",
+    "brand": "Organic",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0440",
+    "name": "Slow Churned Mint Chocolate Chip Ice Cream",
+    "brand": "Slow",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0441",
+    "name": "Black Peppercorns",
+    "brand": "Black",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0442",
+    "name": "Gentle Clean Foaming Face Cleanser, 6.7 fl oz Female Skin Care",
+    "brand": "Gentle",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0443",
+    "name": "\\\"Constant Comment\\\" Decaffeinated Black Tea Blend",
+    "brand": "Generic",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0444",
+    "name": "Plain Greek Goat Yogurt",
+    "brand": "Plain",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0445",
+    "name": "Lowfat Raspberry Kefir Probiotic Cultured Milk Smoothie",
+    "brand": "Lowfat",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0446",
+    "name": "Can/Bottle Opener, Chrome",
+    "brand": "Can/Bottle",
+    "category": "Household"
+  },
+  {
+    "sku": "GRC-0447",
+    "name": "Organic Orange Turmeric Juice",
+    "brand": "Organic",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0448",
+    "name": "Dough for Turnover Pastries",
+    "brand": "Dough",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0449",
+    "name": "Gin Gins Candy",
+    "brand": "Gin",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0450",
+    "name": "Couscous, Israeli, Garlic Jalapeno",
+    "brand": "Couscous,",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0451",
+    "name": "Yellow Cherry Tomato",
+    "brand": "Yellow",
+    "category": "Produce"
+  },
+  {
+    "sku": "GRC-0452",
+    "name": "Pure Cane Granulated W/Spout Sugar",
+    "brand": "Pure",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0453",
+    "name": "Designer 9 Oz. Paper Cups",
+    "brand": "Designer",
+    "category": "Household"
+  },
+  {
+    "sku": "GRC-0454",
+    "name": "Mascarpone Pistachio Caramel Gelato",
+    "brand": "Mascarpone",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0455",
+    "name": "Daily Moisture Shampoo",
+    "brand": "Daily",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0456",
+    "name": "Aspirin 325 Mg",
+    "brand": "Aspirin",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0457",
+    "name": "Non-Scratch Scrub Sponges",
+    "brand": "Non-Scratch",
+    "category": "Household"
+  },
+  {
+    "sku": "GRC-0458",
+    "name": "Frozen Desserts, Fit, Salted Caramel",
+    "brand": "Frozen",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0459",
+    "name": "Velveeta Shells & Cheese Bold Jalapeno",
+    "brand": "Velveeta",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0460",
+    "name": "100% Natural String Cheese Mozzarella Cheese",
+    "brand": "Generic",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0461",
+    "name": "Tikka Masala Curry Sauce",
+    "brand": "Tikka",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0462",
+    "name": "Freeze-Dried Edamame Veggie Snack",
+    "brand": "Freeze-Dried",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0463",
+    "name": "Protein Blend Honey Oats & Seeds Cereal",
+    "brand": "Protein",
+    "category": "Breakfast"
+  },
+  {
+    "sku": "GRC-0464",
+    "name": "Lecithin Granules Non-GMO",
+    "brand": "Lecithin",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0465",
+    "name": "Multigrain Pop Cakes",
+    "brand": "Multigrain",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0466",
+    "name": "Honey Maid Graham Cracker Crumbs",
+    "brand": "Honey",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0467",
+    "name": "Freezer Safe Pint Jars Wide Mouth",
+    "brand": "Freezer",
+    "category": "Household"
+  },
+  {
+    "sku": "GRC-0468",
+    "name": "Organic Lowfat Pomegranate Acai Kefir Probiotic Cultured Milk Smoothie",
+    "brand": "Organic",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0469",
+    "name": "American Cheese Slices",
+    "brand": "American",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0470",
+    "name": "French Rolls",
+    "brand": "French",
+    "category": "Bakery"
+  },
+  {
+    "sku": "GRC-0471",
+    "name": "Turkey Meatloaf & Mashed Potatoes",
+    "brand": "Turkey",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0472",
+    "name": "Antioxidant Infusions Brasilia Blueberry",
+    "brand": "Antioxidant",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0473",
+    "name": "Sweet & Smokey Kansas City Bbq Sauce",
+    "brand": "Sweet",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0474",
+    "name": "Daily Shower Cleaner Ylang Ylang",
+    "brand": "Daily",
+    "category": "Household"
+  },
+  {
+    "sku": "GRC-0475",
+    "name": "Biotin & Collagen Shampoo",
+    "brand": "Biotin",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0476",
+    "name": "Good & Clean Gentle Acne Wash",
+    "brand": "Good",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0477",
+    "name": "Alcohol Free Maple Flavor",
+    "brand": "Alcohol",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0478",
+    "name": "Invigorating Face Wash Men",
+    "brand": "Invigorating",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0479",
+    "name": "Essentials Foaming Facial Cleanser",
+    "brand": "Essentials",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0480",
+    "name": "7UP",
+    "brand": "Generic",
+    "category": "Beverages"
+  },
+  {
+    "sku": "GRC-0481",
+    "name": "Unsalted Pretzel Round",
+    "brand": "Unsalted",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0482",
+    "name": "Stuffed Pasta Shells",
+    "brand": "Stuffed",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0483",
+    "name": "Tomato Paste with Basil, Oregano & Garlic Flavor",
+    "brand": "Tomato",
+    "category": "Canned"
+  },
+  {
+    "sku": "GRC-0484",
+    "name": "Belgian Waffles",
+    "brand": "Belgian",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0485",
+    "name": "Kosher Dill Babies",
+    "brand": "Kosher",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0486",
+    "name": "Take Alongs Twist & Seal Liquid Storage",
+    "brand": "Take",
+    "category": "Household"
+  },
+  {
+    "sku": "GRC-0487",
+    "name": "Tri Color Tortilla Strips",
+    "brand": "Tri",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0488",
+    "name": "Beef Strips Portabella Complete Meals",
+    "brand": "Beef",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0489",
+    "name": "with Dawn Action Pacs Fresh Scent Dishwasher Detergent Pacs",
+    "brand": "Generic",
+    "category": "Household"
+  },
+  {
+    "sku": "GRC-0490",
+    "name": "Medium to Firm Hold Hair Styling Foam",
+    "brand": "Medium",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0491",
+    "name": "Rice & Bean Snack Chips With Adzuki Beans Chipotle Cheese",
+    "brand": "Rice",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0492",
+    "name": "Classic Original Hummus",
+    "brand": "Classic",
+    "category": "Deli"
+  },
+  {
+    "sku": "GRC-0493",
+    "name": "Creamy Danish Blue Cheese Wedge",
+    "brand": "Creamy",
+    "category": "Dairy"
+  },
+  {
+    "sku": "GRC-0494",
+    "name": "Tomatillo Salsa",
+    "brand": "Tomatillo",
+    "category": "Pantry"
+  },
+  {
+    "sku": "GRC-0495",
+    "name": "1000 Roses Floral Toner for Sensitive Skin",
+    "brand": "Generic",
+    "category": "Personal"
+  },
+  {
+    "sku": "GRC-0496",
+    "name": "Hi-Chew Strawberry Fruit",
+    "brand": "Hi-Chew",
+    "category": "International"
+  },
+  {
+    "sku": "GRC-0497",
+    "name": "Cranberry Almond Fruit Clusters Dried Cranberries",
+    "brand": "Cranberry",
+    "category": "Snacks"
+  },
+  {
+    "sku": "GRC-0498",
+    "name": "Granola, Veritas, Organic",
+    "brand": "Granola,",
+    "category": "Breakfast"
+  },
+  {
+    "sku": "GRC-0499",
+    "name": "Organic Mango Peach Carrot Kickstart Smoothie",
+    "brand": "Organic",
+    "category": "Frozen"
+  },
+  {
+    "sku": "GRC-0500",
+    "name": "BBQ Concentrate & Marinade Sauce",
+    "brand": "Bbq",
+    "category": "Pantry"
   }
 ]
