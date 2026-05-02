@@ -266,26 +266,24 @@ def run_feature_ablation(train_items: list[Item], test_items: list[Item],
 
 
 def run_noise_robustness_synthetic(pipeline: RetailELPipeline,
-                                   catalogue_list: list[dict],
-                                   n_per_level: int = 50) -> dict:
+                                   catalogue_list: list[dict]) -> dict:
     """
     Accuracy@1 + 95% bootstrap CI at each synthetic noise level.
-    Works for both synthetic SynEL catalogue and real UCI catalogue
+    One noisy query per SKU per level — every SKU in the catalogue is tested.
+    Works for both synthetic SynEL catalogue and real Instacart catalogue
     (applies artificial noise on top of canonical names).
     """
     results = {}
     for alpha in [0.1, 0.2, 0.3, 0.4, 0.5, 0.6]:
-        items = []
-        per_sku = max(1, n_per_level // len(catalogue_list))
-        for entry in catalogue_list:
-            for _ in range(per_sku):
-                items.append(Item(
-                    description=add_noise(entry["name"], alpha),
-                    sku=entry["sku"], quantity=1, price=1.0,
-                    department=entry["category"],
-                    transaction_id=f"NOISE_{alpha}_{entry['sku']}",
-                ))
-        items = items[:n_per_level]
+        items = [
+            Item(
+                description=add_noise(entry["name"], alpha),
+                sku=entry["sku"], quantity=1, price=1.0,
+                department=entry["category"],
+                transaction_id=f"NOISE_{alpha}_{entry['sku']}",
+            )
+            for entry in catalogue_list
+        ]
         pipeline.predict_batch(items)
         hits = [1 if it.predicted_sku == it.sku else 0 for it in items]
         acc  = round(sum(hits) / len(hits), 4)
@@ -541,11 +539,9 @@ def run_evaluation(mode: str = "synthetic",
         print("\n[9] Noise robustness — natural description variants ...")
         noise_results = run_noise_robustness_natural(pipeline, test_items)
     else:
-        # Synthetic data: sweep artificial noise levels
-        print("\n[9] Noise robustness (n=50 per level, 95% bootstrap CI) ...")
-        noise_results = run_noise_robustness_synthetic(
-            pipeline, catalogue_list, n_per_level=50
-        )
+        # Synthetic data: sweep artificial noise levels (1 item per SKU per level)
+        print(f"\n[9] Noise robustness (n={len(catalogue_list)} per level, 95% bootstrap CI) ...")
+        noise_results = run_noise_robustness_synthetic(pipeline, catalogue_list)
 
     # ── 10. Category-level accuracy ───────────────────────────────────────────
     print("\n[10] Category-level accuracy ...")
