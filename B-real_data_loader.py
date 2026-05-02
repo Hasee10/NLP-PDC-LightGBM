@@ -729,10 +729,10 @@ def load_real_data(output_dir: str = OUTPUT_DIR,
     catalogue: list[dict] | None = None
 
     # ── 0. Use local Instacart files if present (highest priority) ─────────────
-    local_products = Path("products.csv")
-    local_depts    = Path("departments.csv")
+    local_products = Path("instacart_data/products.csv")
+    local_depts    = Path("instacart_data/departments.csv")
     if local_products.exists() and local_depts.exists():
-        print("\n[0] Local Instacart files found — loading products.csv + departments.csv ...")
+        print("\n[0] Local Instacart files found — loading instacart_data/products.csv + departments.csv ...")
         catalogue = _load_instacart_local(local_products, local_depts, MAX_SKUS)
 
     # ── 1. Try Instacart mirrors (only if no local files) ─────────────────────

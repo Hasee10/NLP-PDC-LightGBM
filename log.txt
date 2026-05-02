@@ -1,32 +1,279 @@
 ============================================================
-RetailEL Pipeline Run
-Started : 2026-05-02 02:57:01
+RetailEL — Google Colab Execution Log
+FAST NUCES Islamabad | Spring 2026 | NLP Project
 ============================================================
 
-Running: C:\Python314\python.exe A-generate_synthetic_data.py
-[INFO] Loaded 49688 products
-[INFO] Loaded 5000 baskets
+============================================================
+SECTION 1 — Setup & GPU Check
+============================================================
 
+[Install]
+!pip install -q rank_bm25 python-Levenshtein lightgbm sentence-transformers tqdm pandas numpy scikit-learn
 
-[STDERR]
-Traceback (most recent call last):
-  File "C:\Users\Administrator\OneDrive\Desktop\Semester#6\NLP\Project\A-generate_synthetic_data.py", line 226, in <module>
-    generate_dataset(
-    ~~~~~~~~~~~~~~~~^
-        products_path="products.csv",
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    ...<4 lines>...
-        n_transactions=500
-        ^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "C:\Users\Administrator\OneDrive\Desktop\Semester#6\NLP\Project\A-generate_synthetic_data.py", line 215, in generate_dataset
-    print(f"\n\u2705 DONE")
-    ~~~~~^^^^^^^^^^^^^^
-  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
-    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
-           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 2: character maps to <undefined>
+   153.3/153.3 kB 6.9 MB/s eta 0:00:00
+   3.1/3.1 MB 77.6 MB/s eta 0:00:00
 
+[Imports & Device Check]
+Device : cuda
+GPU    : Tesla T4
+Directories ready.
 
-FAILED with exit code 1
+============================================================
+SECTION 2 — Upload Instacart CSV Files
+============================================================
+
+Select all 4 CSV files at once (Ctrl+Click to multi-select):
+departments.csv(text/csv) - 270 bytes, last modified: 5/2/2026 - 100% done
+order_products__train.csv(text/csv) - 24680147 bytes, last modified: 5/2/2026 - 100% done
+orders.csv(text/csv) - 108968645 bytes, last modified: 5/2/2026 - 100% done
+products.csv(text/csv) - 2166953 bytes, last modified: 5/2/2026 - 100% done
+Saving departments.csv to departments (1).csv
+Saving order_products__train.csv to order_products__train (1).csv
+Saving orders.csv to orders (1).csv
+Saving products.csv to products (1).csv
+
+All 4 files uploaded.
+USE_LOCAL_INSTACART = True
+
+============================================================
+SECTION 3 — Noise Engine (Shared)
+============================================================
+
+Noise engine ready.
+  Sample legacy : HEINZ TMT KTCHP 32OZ BTL
+  Sample standard: Hehnz Tmt Ktchp 32oz Btl
+  Sample modern : Heinz Tmt Ktchp 32oz Btl
+
+============================================================
+SECTION 4 — Dataset Generation
+============================================================
+
+Catalogue: 500 SKUs
+Saved -> data/catalogue.json
+
+Generated 500 transactions, 2814 items
+Saved -> data/synel_dataset.csv, data/transactions.json
+
+============================================================
+SECTION 5 — Real Dataset (data_real/)
+============================================================
+
+Real dataset: 500 SKUs | 11015 pairs
+Noisy variants: 6559/11015 (59.5%)
+Saved -> data_real/catalogue_real.json, data_real/synel_real.csv
+
+============================================================
+SECTION 6 — Pipeline Definition (All 5 Stages)
+============================================================
+
+Stage 1 ready.
+  Example: 'HNZ KTCHP 32OZ' -> 'Heinz Ketchup 32oz'
+
+Stage 2 ready.
+
+Stage 3 ready.
+
+Stage 4 ready.
+
+Stage 5 + full pipeline ready.
+
+============================================================
+SECTION 7 — Load Data & Train/Val/Test Split
+============================================================
+
+Total items : 11015
+Train       : 7710
+Validation  : 1652
+Test        : 1653
+
+============================================================
+SECTION 8 — Build Pipeline & Train LightGBM
+============================================================
+
+Building RetailEL pipeline...
+Catalogue loaded: 500 SKUs
+
+Training on 7710 items...
+
+Building feature matrix: 100%|██████████| 7710/7710 [00:39<00:00, 193.04item/s]
+Training LightGBM reranker...
+Training complete.
+Pipeline trained.
+
+============================================================
+SECTION 9 — Full Pipeline Evaluation
+============================================================
+
+Running full pipeline on test set...
+
+==================================================
+ Full Pipeline Results
+==================================================
+ Accuracy@1      : 0.9782  (97.82%)
+ Throughput      : 229.8 items/sec
+ Wall-clock avg  : 4.352 ms/item
+ Stage sum avg   : 4.236 ms
+ Overhead        : 0.116 ms  (2.7%)
+ LLM Bypass Rate : 98.73%
+
+============================================================
+SECTION 10 — Ablation Studies
+============================================================
+
+[Ablation 1] No basket context...
+
+Building feature matrix: 100%|██████████| 7710/7710 [00:23<00:00, 327.78item/s]
+Training LightGBM reranker...
+Training complete.
+  Acc@1 (no basket context) : 0.9921  (99.21%)
+
+[Ablation 2] BM25-only retrieval...
+  Acc@1 (BM25 only) : 0.7453  (74.53%)
+
+[Ablation 3] RRF top-1 (no reranker)...
+  Acc@1 (no reranker) : 0.7489  (74.89%)
+
+--- Improvement Summary ---
+  Full pipeline vs BM25-only  : +23.29 pp
+  Full pipeline vs no reranker: +22.93 pp
+  Full pipeline vs no context : +-1.39 pp
+
+============================================================
+SECTION 11 — Neural Bi-Encoder Baseline
+============================================================
+
+Loading all-MiniLM-L6-v2 on cuda...
+/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_auth.py:93: UserWarning:
+The secret `HF_TOKEN` does not exist in your Colab secrets.
+To authenticate with the Hugging Face Hub, create a token in your settings tab
+(https://huggingface.co/settings/tokens), set it as secret in your Google Colab
+and restart your session. You will be able to reuse this secret in all of your notebooks.
+Please note that authentication is recommended but still optional to access public models or datasets.
+  warnings.warn(
+modules.json:                   100%  349/349   [00:00<00:00, 32.9kB/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+config_sentence_transformers.json: 100%  116/116   [00:00<00:00, 11.7kB/s]
+README.md:                          10.5k/?  [00:00<00:00, 980kB/s]
+sentence_bert_config.json:         100%  53.0/53.0 [00:00<00:00, 5.35kB/s]
+config.json:                       100%  612/612   [00:00<00:00, 43.2kB/s]
+model.safetensors:                 100%  90.9M/90.9M [00:01<00:00, 454MB/s]
+Loading weights:                   100%  103/103   [00:00<00:00, 377.16it/s, Materializing param=pooler.dense.weight]
+BertModel LOAD REPORT from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  |
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  |
+
+Notes:
+- UNEXPECTED    :can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+tokenizer_config.json:     100%  350/350   [00:00<00:00, 37.4kB/s]
+vocab.txt:                  232k/?  [00:00<00:00, 8.65MB/s]
+tokenizer.json:             466k/?  [00:00<00:00, 26.0MB/s]
+special_tokens_map.json:   100%  112/112   [00:00<00:00, 12.6kB/s]
+config.json:               100%  190/190   [00:00<00:00, 19.9kB/s]
+Batches:                   100%  16/16     [00:00<00:00, 10.11it/s]
+Batches:                   100%  52/52     [00:00<00:00, 82.55it/s]
+
+Neural Bi-Encoder Acc@1 : 0.8451  (84.51%)
+RetailEL vs Neural      : +13.31 pp improvement
+
+============================================================
+SECTION 12 — Feature Importance & Leave-One-Out Ablation
+============================================================
+
+Running feature importance analysis...
+Training full model for LOO...
+
+Full model Acc@1: 0.9770
+
+Feature Gain Importance:
+  RRF Score                       38.55%
+  Length Ratio                    15.98%
+  Jaccard Token Overlap           14.71%
+  Levenshtein Ratio               14.29%
+  Bigram Overlap                  12.04%
+  Levenshtein Distance             3.55%
+  Prior SKU Frequency              0.46%
+  Char-level Jaccard               0.42%
+
+Leave-One-Out Ablation:
+  Remove 'Levenshtein Distance': Acc=0.9728  drop=+0.423pp
+  Remove 'Levenshtein Ratio': Acc=0.9631  drop=+1.391pp
+  Remove 'Jaccard Token Overlap': Acc=0.9673  drop=+0.968pp
+  Remove 'Bigram Overlap': Acc=0.9607  drop=+1.633pp
+  Remove 'Char-level Jaccard': Acc=0.9782  drop=-0.121pp
+  Remove 'Length Ratio': Acc=0.9583  drop=+1.875pp
+  Remove 'RRF Score': Acc=0.9770  drop=+0.000pp
+  Remove 'Prior SKU Frequency': Acc=0.9770  drop=+0.000pp
+
+============================================================
+SECTION 13 — Noise Robustness
+============================================================
+
+[Noise Robustness] Natural POS variants vs canonical queries...
+  POS-noisy variants (n=975) :  Acc = 0.9744  (97.44%)
+  Canonical queries  (n=678) :  Acc = 0.9838  (98.38%)
+
+[Noise Robustness] Synthetic noise sweep (alpha = 0.1 .. 0.6)...
+  alpha=0.1: Acc=0.9940  95% CI [0.9860, 1.0000]  n=500
+  alpha=0.2: Acc=0.9960  95% CI [0.9900, 1.0000]  n=500
+  alpha=0.3: Acc=1.0000  95% CI [1.0000, 1.0000]  n=500
+  alpha=0.4: Acc=0.9920  95% CI [0.9840, 0.9980]  n=500
+  alpha=0.5: Acc=0.9820  95% CI [0.9700, 0.9920]  n=500
+  alpha=0.6: Acc=0.9940  95% CI [0.9860, 1.0000]  n=500
+
+============================================================
+SECTION 14 — Category-Level Accuracy
+============================================================
+
+Category-level Accuracy@1:
+  Bakery               0.9787  [################### ]  (n=47)
+  Beverages            0.9809  [################### ]  (n=157)
+  Breakfast            0.9821  [################### ]  (n=56)
+  Canned               0.9753  [################### ]  (n=81)
+  Dairy                0.9697  [################### ]  (n=99)
+  Deli                 0.9706  [################### ]  (n=68)
+  Frozen               0.9841  [################### ]  (n=189)
+  Household            0.9748  [################### ]  (n=119)
+  Meat                 0.9412  [##################  ]  (n=34)
+  Pantry               0.9834  [################### ]  (n=241)
+  Personal             0.9810  [################### ]  (n=263)
+  Produce              0.9577  [################### ]  (n=71)
+  Snacks               0.9825  [################### ]  (n=228)
+
+============================================================
+SECTION 15 — Results Summary & Visualisation
+============================================================
+
+=======================================================
+ RETAILEL — FINAL RESULTS SUMMARY
+=======================================================
+  Catalogue Size                      500 SKUs
+  Test Items                          1653
+  Full Pipeline Acc@1                 97.82%
+  Neural Bi-Encoder Acc@1             84.51%
+  BM25-Only Acc@1                     74.53%
+  No Reranker Acc@1                   74.89%
+  No Basket Context Acc@1             99.21%
+  vs Neural (+pp)                     +13.31pp
+  vs BM25 (+pp)                       +23.29pp
+  Throughput                          229.8 items/sec
+  Latency (wall-clock avg)            4.352 ms
+  LLM Bypass Rate                     98.73%
+=======================================================
+
+Saved -> results/figures.png
+Saved -> results/fig_model_comparison.png
+Saved -> results/fig_noise_robustness.png
+Saved -> results/fig_feature_importance.png
+
+============================================================
+SECTION 16 — Save All Results to JSON
+============================================================
+
+All results saved -> results/metrics_real.json
+Downloads started.
+
+============================================================
+END OF LOG
+============================================================

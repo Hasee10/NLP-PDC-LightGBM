@@ -1,3 +1,16 @@
+"""
+RetailEL — Full Pipeline Runner
+Runs all steps in sequence and saves output to log.txt
+
+Run order:
+    A-generate_synthetic_data.py   — build data/ from instacart_data/ CSVs
+    B-real_data_loader.py          — build data_real/ from instacart_data/ CSVs
+    C-evaluate_full.py             — evaluate pipeline, save results/
+
+To start the API after evaluation:
+    python D-api_server.py
+"""
+
 import subprocess
 import sys
 from datetime import datetime
@@ -5,7 +18,7 @@ from pathlib import Path
 
 COMMANDS = [
     [sys.executable, "A-generate_synthetic_data.py"],
-    [sys.executable, "real_data_loader.py"],
+    [sys.executable, "B-real_data_loader.py"],
     [sys.executable, "C-evaluate_full.py", "--mode", "real"],
 ]
 

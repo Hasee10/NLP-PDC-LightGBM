@@ -1,1 +1,15 @@
-*.csv
+# Instacart raw CSV files (large, not tracked in git)
+instacart_data/
+
+# Generated data outputs
+data/
+data_real/
+results/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Misc
+.claude/

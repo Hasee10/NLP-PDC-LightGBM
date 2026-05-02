@@ -1,9 +1,9 @@
 """
 FastAPI REST interface for the RetailEL pipeline.
 
-Run:
-    python real_data_loader.py          # optional, only needed first time
-    uvicorn api:app --reload
+Run order:
+    python B-real_data_loader.py        # only needed first time
+    python D-api_server.py              # starts API on port 8000
 
 This API uses the real dataset files:
     data_real/catalogue_real.json
@@ -45,30 +45,24 @@ _pipeline: Optional[RetailELPipeline] = None
 
 def _load_real_data_if_available() -> None:
     """
-    Create data_real/ files if they are missing.
-
-    Supports both names:
-      - real_data_loader.py      preferred renamed file
-      - B-load_real_data.py      original uploaded file name
+    Create data_real/ files if they are missing by auto-running B-real_data_loader.py.
     """
     if CATALOGUE_PATH.exists() and DATASET_CSV.exists():
         return
 
     DATA_DIR.mkdir(parents=True, exist_ok=True)
 
-    normal_loader = BASE_DIR / "real_data_loader.py"
-    original_loader = BASE_DIR / "B-load_real_data.py"
-    loader_path = normal_loader if normal_loader.exists() else original_loader
+    loader_path = BASE_DIR / "B-real_data_loader.py"
 
     if not loader_path.exists():
         raise FileNotFoundError(
-            "Dataset files are missing and no loader was found.\n"
+            "Dataset files are missing and B-real_data_loader.py was not found.\n"
             f"Expected: {CATALOGUE_PATH} and {DATASET_CSV}\n"
-            "Fix: run/rename B-load_real_data.py as real_data_loader.py, then run:\n"
-            "  python real_data_loader.py"
+            "Fix: run B-real_data_loader.py first:\n"
+            "  python B-real_data_loader.py"
         )
 
-    spec = importlib.util.spec_from_file_location("real_data_loader_runtime", loader_path)
+    spec = importlib.util.spec_from_file_location("B_real_data_loader_runtime", loader_path)
     if spec is None or spec.loader is None:
         raise ImportError(f"Could not import loader from {loader_path}")
 
@@ -284,6 +278,6 @@ if __name__ == "__main__":
     import uvicorn
 
     # Pass the app object directly — avoids module-name issues with
-    # filenames that contain dashes (E-api_server.py is not importable
+    # filenames that contain dashes (D-api_server.py is not importable
     # as a module by name, so "api:app" string form would fail).
     uvicorn.run(app, host="0.0.0.0", port=8000, reload=False)

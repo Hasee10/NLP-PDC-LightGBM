@@ -224,10 +224,10 @@ def generate_dataset(
 
 if __name__ == "__main__":
     generate_dataset(
-        products_path="products.csv",
-        departments_path="departments.csv",
-        orders_path="orders.csv",
-        order_products_path="order_products__train.csv",
+        products_path="instacart_data/products.csv",
+        departments_path="instacart_data/departments.csv",
+        orders_path="instacart_data/orders.csv",
+        order_products_path="instacart_data/order_products__train.csv",
         output_dir="data",
         n_transactions=500
     )

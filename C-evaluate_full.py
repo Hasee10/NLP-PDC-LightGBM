@@ -354,11 +354,8 @@ def load_real_data_items(data_dir: str = "data_real") -> tuple[list[Item], list[
     if not csv_path.exists():
         raise FileNotFoundError(
             f"Real dataset not found at {csv_path}.\n"
-            "Run real_data_loader.py first:\n"
-            "  python real_data_loader.py\n"
-            "Or if automatic download fails, manually download the UCI Online\n"
-            "Retail dataset and run:\n"
-            "  python real_data_loader.py online_retail.xlsx"
+            "Run B-real_data_loader.py first:\n"
+            "  python B-real_data_loader.py\n"
         )
     all_items = []
     with open(csv_path, newline="", encoding="utf-8") as f:
