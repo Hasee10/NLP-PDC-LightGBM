@@ -31,10 +31,12 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import os
 import random
 import re
 import time
 from collections import defaultdict
+from multiprocessing import cpu_count
 from pathlib import Path
 
 import numpy as np
@@ -317,6 +319,107 @@ def run_noise_robustness_natural(pipeline: RetailELPipeline,
     }
 
 
+# ── PDC: parallel speedup analysis ───────────────────────────────────────────
+
+def run_pdc_analysis(pipeline: RetailELPipeline,
+                     test_items: list[Item],
+                     n_workers: int | None = None) -> dict:
+    """
+    Measure serial vs parallel predict_batch wall-clock time, compute
+    actual speedup, and derive Amdahl's Law theoretical upper bound.
+
+    Parallelism used: multiprocessing.pool.ThreadPool
+      - Shared memory model: all threads access the same pipeline objects
+        (BM25 index, TF-IDF matrix, LightGBM model) without copying.
+      - numpy / scipy / Levenshtein C-ext release Python's GIL →
+        true multi-core execution across available CPU cores.
+      - Stage 2 (basket context) remains serial: items share basket state.
+
+    Amdahl's Law:  Speedup(N) = 1 / (S + P/N)
+      S = serial fraction  = normalisation stage time / total stage time
+      P = parallel fraction = 1 - S
+      N = number of worker threads
+    """
+    if n_workers is None:
+        n_workers = min(cpu_count(), 8)
+
+    print(f"\n{'='*55}")
+    print(f" PDC Analysis  —  {n_workers} threads  ×  {len(test_items)} items")
+    print(f"{'='*55}")
+
+    # ── Serial run ────────────────────────────────────────────────────────────
+    serial_items = clone_test(test_items)
+    t0 = time.perf_counter()
+    pipeline.predict_batch(serial_items)
+    serial_wall = time.perf_counter() - t0
+    serial_acc  = accuracy(serial_items)
+    serial_ms   = serial_wall / len(serial_items) * 1000
+
+    # ── Parallel run ──────────────────────────────────────────────────────────
+    parallel_items = clone_test(test_items)
+    t1 = time.perf_counter()
+    pipeline.predict_batch_parallel(parallel_items, n_workers=n_workers)
+    parallel_wall = time.perf_counter() - t1
+    parallel_acc  = accuracy(parallel_items)
+    parallel_ms   = parallel_wall / len(parallel_items) * 1000
+    speedup       = serial_wall / parallel_wall if parallel_wall > 0 else 1.0
+
+    print(f" Serial   : {serial_wall:.3f}s  |  {serial_ms:.3f} ms/item  |  Acc@1={serial_acc:.4f}")
+    print(f" Parallel : {parallel_wall:.3f}s  |  {parallel_ms:.3f} ms/item  |  Acc@1={parallel_acc:.4f}")
+    print(f" Speedup  : {speedup:.2f}x  ({n_workers} threads)")
+    acc_match = abs(serial_acc - parallel_acc) < 1e-9
+    print(f" Accuracy preserved : {'YES — identical results' if acc_match else 'MISMATCH — investigate'}")
+
+    # ── Amdahl's Law ──────────────────────────────────────────────────────────
+    # Serial fraction  S = normalisation latency / total stage latency
+    # (normalisation is pure Python string ops — cannot be parallelised
+    #  across items because basket context building must run first)
+    stage_means: dict[str, float] = {}
+    for stage in ["normalisation", "retrieval", "reranking", "selection"]:
+        vals = [it.stage_times.get(stage, 0.0) for it in serial_items]
+        stage_means[stage] = float(np.mean(vals))
+
+    total_stage = sum(stage_means.values()) or 1e-9
+    S = stage_means["normalisation"] / total_stage   # serial fraction
+    P = 1.0 - S                                      # parallel fraction
+
+    amdahl_curve = {
+        n: round(1.0 / (S + P / n), 3)
+        for n in [1, 2, 4, 8, 16, 32]
+    }
+    theoretical_n  = round(1.0 / (S + P / n_workers), 2)
+    theoretical_inf = round(1.0 / S, 1)
+
+    print(f"\n Amdahl's Law:")
+    print(f"   Serial fraction   S = {S:.4f}  ({S*100:.1f}%  — normalisation)")
+    print(f"   Parallel fraction P = {P:.4f}  ({P*100:.1f}%  — retrieval+reranking+selection)")
+    print(f"   Theoretical speedup @ {n_workers} threads = {theoretical_n}x")
+    print(f"   Theoretical max speedup (∞ threads) = {theoretical_inf}x")
+    print(f"   Speedup curve (theory): {amdahl_curve}")
+    print(f"   Measured speedup       : {speedup:.2f}x")
+    overhead_ratio = round(speedup / theoretical_n, 3) if theoretical_n > 0 else 0
+    print(f"   Efficiency (measured/theory) = {overhead_ratio:.1%}")
+    print(f"{'='*55}")
+
+    return {
+        "n_workers":             n_workers,
+        "serial_wall_s":         round(serial_wall,   4),
+        "parallel_wall_s":       round(parallel_wall, 4),
+        "serial_ms_per_item":    round(serial_ms,     3),
+        "parallel_ms_per_item":  round(parallel_ms,   3),
+        "measured_speedup":      round(speedup,        3),
+        "accuracy_preserved":    acc_match,
+        "amdahl": {
+            "serial_fraction":    round(S, 4),
+            "parallel_fraction":  round(P, 4),
+            "theoretical_speedup_at_n": theoretical_n,
+            "theoretical_max_speedup":  theoretical_inf,
+            "speedup_curve":            amdahl_curve,
+        },
+        "stage_mean_ms": {k: round(v * 1000, 3) for k, v in stage_means.items()},
+    }
+
+
 # ── Dataset loading ───────────────────────────────────────────────────────────
 
 def load_synthetic_data(data_dir: str) -> tuple[list[Item], list[Item], list[Item]]:
@@ -450,6 +553,10 @@ def run_evaluation(mode: str = "synthetic",
     print(f"    Stage sum avg   : {stage_sum_ms:.3f} ms")
     print(f"    Overhead avg    : {overhead_ms:.3f} ms  (basket grouping / dispatch)")
     print(f"    LLM bypass rate : {llm_bypass / len(test_items):.2%}")
+
+    # ── PDC: parallel speedup & Amdahl's Law ─────────────────────────────────
+    print("\n[PDC] Running parallel speedup analysis ...")
+    pdc_results = run_pdc_analysis(pipeline, test_items)
 
     # ── 4. Ablation: no basket context ────────────────────────────────────────
     print("\n[4] Ablation: no basket context ...")
@@ -589,6 +696,7 @@ def run_evaluation(mode: str = "synthetic",
         "feature_ablation":  ablation_results,
         "noise_robustness":  noise_results,
         "category_accuracy": category_acc,
+        "pdc_analysis":      pdc_results,
         "dataset_stats": {
             "train_items": len(train_items),
             "val_items":   len(val_items),

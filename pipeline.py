@@ -12,9 +12,12 @@ from __future__ import annotations
 
 import json
 import importlib.util
+import os
 import re
 import time
 from dataclasses import dataclass, field
+from multiprocessing import cpu_count
+from multiprocessing.pool import ThreadPool
 from pathlib import Path
 from typing import Optional
 
@@ -198,6 +201,50 @@ def extract_features(query: str, candidate_name: str,
     ]
 
 
+# ── PDC: module-level worker for parallel feature extraction ─────────────────
+# Must be defined at module level so ThreadPool can reference it from any
+# calling context.  ThreadPool passes objects by reference (no pickling),
+# so the large retriever / catalogue objects are shared — not copied.
+
+def _fit_item_worker(args: tuple):
+    """
+    PDC worker — retrieve candidates + extract LightGBM features for ONE
+    training item.  Executed in parallel by ThreadPool inside
+    LightGBMReranker.fit().
+
+    Why threads give real speedup here (despite Python's GIL):
+      - BM25Okapi.get_scores()  uses numpy → releases GIL
+      - TfidfVectorizer.transform() uses scipy sparse → releases GIL
+      - cosine_similarity()     uses numpy BLAS → releases GIL
+      - Levenshtein.*           are C extensions → release GIL
+    The tiny pure-Python overhead (set ops, dict lookups) is negligible.
+
+    Args:
+        args: (item, retriever, catalogue_dict, sku_prior)
+              All objects are shared by reference across threads — zero copy.
+    Returns:
+        (group_feats, group_labels, group_size)  or  None if no candidates.
+    """
+    item, retriever, catalogue_dict, sku_prior = args
+    q = normalise_text(item.basket_context)
+    candidates = retriever.retrieve(q, top_k=10)
+    if not candidates:
+        return None
+    group_feats, group_labels = [], []
+    for sku, rrf_score in candidates:
+        entry = catalogue_dict.get(sku)
+        if entry is None:
+            continue
+        feats  = extract_features(q, entry.search_text(),
+                                  rrf_score, sku_prior.get(sku, 0.0))
+        label  = 1 if sku == item.sku else 0
+        group_feats.append(feats)
+        group_labels.append(label)
+    if group_labels and sum(group_labels) == 0:
+        group_labels[0] = 1          # ensure at least one positive per group
+    return group_feats, group_labels, len(group_feats)
+
+
 class LightGBMReranker:
     """
     LightGBM LambdaRank reranker (Burges, Ragno & Le, NeurIPS 2006).
@@ -222,42 +269,50 @@ class LightGBMReranker:
         self.model = None
         self.sku_prior: dict[str, float] = {}
 
-    def fit(self, train_items: list[Item], retriever: HybridRetriever) -> None:
+    def fit(self, train_items: list[Item], retriever: HybridRetriever,
+            n_workers: int | None = None) -> None:
         import lightgbm as lgb
 
-        X, y, groups = [], [], []
+        # ── PDC: determine thread count ───────────────────────────────────────
+        if n_workers is None:
+            n_workers = min(cpu_count(), 8)
+
+        # ── Serial: compute SKU frequency prior (needs all items) ────────────
         sku_counts: dict[str, int] = {}
         for item in train_items:
             sku_counts[item.sku] = sku_counts.get(item.sku, 0) + 1
         total = len(train_items)
         self.sku_prior = {k: v / total for k, v in sku_counts.items()}
 
-        try:
-            from tqdm import tqdm as _tqdm
-            _iter = _tqdm(train_items, desc="Building feature matrix", unit="item")
-        except ImportError:
-            _iter = train_items
+        # ── PDC: parallel feature extraction via ThreadPool ───────────────────
+        # Each thread handles one training item: retrieve candidates + extract
+        # 8 LightGBM features.  numpy / scipy / Levenshtein C-ext all release
+        # the GIL, so threads run on separate cores simultaneously.
+        print(f"  PDC: building feature matrix "
+              f"({n_workers} threads × {len(train_items)} items) ...")
+        t_feat = time.perf_counter()
 
-        for item in _iter:
-            q = normalise_text(item.basket_context)
-            candidates = retriever.retrieve(q, top_k=10)
-            if not candidates:
+        item_args = [(item, retriever, self.catalogue, self.sku_prior)
+                     for item in train_items]
+
+        with ThreadPool(n_workers) as pool:
+            results = pool.map(_fit_item_worker, item_args)
+
+        feat_sec = time.perf_counter() - t_feat
+        print(f"  PDC: feature extraction done in {feat_sec:.2f}s  "
+              f"[{n_workers} threads, ~{feat_sec/len(train_items)*1000:.2f} ms/item]")
+
+        # ── Aggregate results from all workers ────────────────────────────────
+        X: list = []
+        y: list = []
+        groups: list[int] = []
+        for result in results:
+            if result is None:
                 continue
-            group_feats, group_labels = [], []
-            for sku, rrf_score in candidates:
-                entry = self.catalogue.get(sku)
-                if entry is None:
-                    continue
-                feats = extract_features(q, entry.search_text(),
-                                         rrf_score, self.sku_prior.get(sku, 0.0))
-                label = 1 if sku == item.sku else 0
-                group_feats.append(feats)
-                group_labels.append(label)
-            if sum(group_labels) == 0:
-                group_labels[0] = 1  # ensure at least one positive
-            X.extend(group_feats)
-            y.extend(group_labels)
-            groups.append(len(group_feats))
+            gf, gl, gs = result
+            X.extend(gf)
+            y.extend(gl)
+            groups.append(gs)
 
         if not X or not groups:
             print("Warning: no training candidates were generated; reranker will stay inactive.")
@@ -448,6 +503,72 @@ class RetailELPipeline:
             item.confidence = conf
             item.stage_times["total"] = time.perf_counter() - t0
             item.stage_times["used_llm"] = used_llm
+
+        return items
+
+    def predict_batch_parallel(self, items: list[Item],
+                               n_workers: int | None = None) -> list[Item]:
+        """
+        PDC-parallel version of predict_batch.
+
+        Parallelism model
+        -----------------
+        Stage 2 (basket context) is inherently serial — each item's context
+        depends on its basket-mates.  Stages 1, 3, 4, 5 are fully independent
+        per item and run concurrently via ThreadPool.
+
+        Why ThreadPool (not ProcessPool)
+        ---------------------------------
+        • No pickling overhead — BM25, TF-IDF matrix, LightGBM model are
+          large objects; ThreadPool shares them by reference at zero cost.
+        • numpy (BM25 scores, TF-IDF cosine), scipy sparse, and the
+          Levenshtein C extension all release Python's GIL → true multi-core
+          execution despite using threads.
+        • LightGBM model.predict() on numpy arrays also releases the GIL.
+
+        Accuracy is identical to predict_batch() — same logic, same order of
+        operations, only the scheduling changes.
+        """
+        if n_workers is None:
+            n_workers = min(cpu_count(), 8, max(1, len(items)))
+
+        # Stage 2: basket context — serial (items share basket state)
+        by_txn: dict[str, list[Item]] = {}
+        for item in items:
+            by_txn.setdefault(item.transaction_id, []).append(item)
+        for basket in by_txn.values():
+            build_basket_contexts(basket)
+
+        # Stages 1, 3, 4, 5 — parallel per item
+        def _predict_one(item: Item) -> None:
+            t0 = time.perf_counter()
+
+            t1 = time.perf_counter()
+            norm_query = normalise_text(item.basket_context)        # Stage 1
+            item.stage_times["normalisation"] = time.perf_counter() - t1
+
+            t2 = time.perf_counter()
+            candidates = self.retriever.retrieve(norm_query, top_k=10)  # Stage 3
+            item.stage_times["retrieval"] = time.perf_counter() - t2
+
+            t3 = time.perf_counter()
+            top_candidates = (                                       # Stage 4
+                self.reranker.rerank(norm_query, candidates, top_k=3)
+                if self._trained else candidates[:3]
+            )
+            item.stage_times["reranking"] = time.perf_counter() - t3
+
+            t4 = time.perf_counter()
+            pred_sku, conf, used_llm = self.selector.select(top_candidates)  # Stage 5
+            item.stage_times["selection"] = time.perf_counter() - t4
+
+            item.predicted_sku             = pred_sku
+            item.confidence                = conf
+            item.stage_times["total"]      = time.perf_counter() - t0
+            item.stage_times["used_llm"]   = used_llm
+
+        with ThreadPool(n_workers) as pool:
+            pool.map(_predict_one, items)
 
         return items
 

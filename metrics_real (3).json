@@ -1,0 +1,167 @@
+{
+  "mode": "real",
+  "main_results": {
+    "full_pipeline_acc1": 0.9782,
+    "no_basket_ctx_acc1": 0.9921,
+    "bm25_only_acc1": 0.7453,
+    "no_reranker_acc1": 0.7489,
+    "neural_biencoder_acc1": 0.8451
+  },
+  "improvement_over_baselines_pp": {
+    "vs_neural": 13.31,
+    "vs_bm25": 23.29,
+    "vs_norr": 22.93
+  },
+  "performance": {
+    "throughput_items_per_sec": 264.43,
+    "wall_clock_ms": 3.782,
+    "stage_sum_ms": 3.72,
+    "overhead_ms": 0.062,
+    "llm_bypass_rate": 0.9873,
+    "stage_latency_ms": {
+      "normalisation": {
+        "mean": 0.079,
+        "p95": 0.119
+      },
+      "retrieval": {
+        "mean": 3.103,
+        "p95": 3.881
+      },
+      "reranking": {
+        "mean": 0.534,
+        "p95": 0.666
+      },
+      "selection": {
+        "mean": 0.003,
+        "p95": 0.004
+      }
+    }
+  },
+  "pdc_analysis": {
+    "n_workers": 2,
+    "n_items": 1653,
+    "serial_wall_s": 7.147,
+    "parallel_wall_s": 7.0985,
+    "speedup": 1.007,
+    "accuracy_serial": 0.9782,
+    "accuracy_parallel": 0.9782,
+    "accuracy_preserved": true,
+    "amdahl": {
+      "serial_fraction_S": 0.021889,
+      "parallel_fraction_P": 0.978111,
+      "theoretical_max": 45.69,
+      "speedup_curve": {
+        "1": 1.0,
+        "2": 1.957,
+        "4": 3.754,
+        "8": 6.937,
+        "16": 12.045,
+        "32": 19.064
+      }
+    }
+  },
+  "noise_robustness": {
+    "pos_variant_acc": 0.9744,
+    "canonical_acc": 0.9838,
+    "synthetic_sweep": {
+      "0.1": {
+        "acc": 0.994,
+        "ci_lo": 0.986,
+        "ci_hi": 1.0
+      },
+      "0.2": {
+        "acc": 0.996,
+        "ci_lo": 0.99,
+        "ci_hi": 1.0
+      },
+      "0.3": {
+        "acc": 1.0,
+        "ci_lo": 1.0,
+        "ci_hi": 1.0
+      },
+      "0.4": {
+        "acc": 0.992,
+        "ci_lo": 0.984,
+        "ci_hi": 0.998
+      },
+      "0.5": {
+        "acc": 0.982,
+        "ci_lo": 0.97,
+        "ci_hi": 0.992
+      },
+      "0.6": {
+        "acc": 0.994,
+        "ci_lo": 0.986,
+        "ci_hi": 1.0
+      }
+    }
+  },
+  "category_accuracy": {
+    "Bakery": 0.9787,
+    "Beverages": 0.9809,
+    "Breakfast": 0.9821,
+    "Canned": 0.9753,
+    "Dairy": 0.9697,
+    "Deli": 0.9706,
+    "Frozen": 0.9841,
+    "Household": 0.9748,
+    "Meat": 0.9412,
+    "Pantry": 0.9834,
+    "Personal": 0.981,
+    "Produce": 0.9577,
+    "Snacks": 0.9825
+  },
+  "feature_ablation": {
+    "full_model_acc": 0.977,
+    "leave_one_out": {
+      "Levenshtein Distance": {
+        "acc_without": 0.9728,
+        "drop_pp": 0.423
+      },
+      "Levenshtein Ratio": {
+        "acc_without": 0.9631,
+        "drop_pp": 1.391
+      },
+      "Jaccard Token Overlap": {
+        "acc_without": 0.9673,
+        "drop_pp": 0.968
+      },
+      "Bigram Overlap": {
+        "acc_without": 0.9607,
+        "drop_pp": 1.633
+      },
+      "Char-level Jaccard": {
+        "acc_without": 0.9782,
+        "drop_pp": -0.121
+      },
+      "Length Ratio": {
+        "acc_without": 0.9583,
+        "drop_pp": 1.875
+      },
+      "RRF Score": {
+        "acc_without": 0.977,
+        "drop_pp": 0.0
+      },
+      "Prior SKU Frequency": {
+        "acc_without": 0.977,
+        "drop_pp": 0.0
+      }
+    },
+    "gain_importance": {
+      "Levenshtein Distance": 3.55,
+      "Levenshtein Ratio": 14.29,
+      "Jaccard Token Overlap": 14.71,
+      "Bigram Overlap": 12.04,
+      "Char-level Jaccard": 0.42,
+      "Length Ratio": 15.98,
+      "RRF Score": 38.55,
+      "Prior SKU Frequency": 0.46
+    }
+  },
+  "dataset_stats": {
+    "train_items": 7710,
+    "val_items": 1652,
+    "test_items": 1653,
+    "num_skus": 500
+  }
+}

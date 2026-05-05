@@ -94,8 +94,8 @@ Building RetailEL pipeline...
 Catalogue loaded: 500 SKUs
 
 Training on 7710 items...
-
-Building feature matrix: 100%|██████████| 7710/7710 [00:39<00:00, 193.04item/s]
+  PDC: building feature matrix (2 threads x 7710 items) ...
+  PDC: feature extraction done in 19.84s  [2 threads, ~2.57 ms/item]
 Training LightGBM reranker...
 Training complete.
 Pipeline trained.
@@ -115,6 +115,28 @@ Running full pipeline on test set...
  Stage sum avg   : 4.236 ms
  Overhead        : 0.116 ms  (2.7%)
  LLM Bypass Rate : 98.73%
+
+============================================================
+SECTION 9.5 — PDC: Parallel Data-Centric Speedup
+============================================================
+
+PDC: CPU cores available = 2
+PDC: Using 2 threads for parallel prediction
+
+=======================================================
+ PDC Speedup Analysis  (2 threads, 1653 items)
+=======================================================
+ Serial   : 7.147s  (4.324 ms/item)  Acc=0.9782
+ Parallel : 7.099s  (4.294 ms/item)  Acc=0.9782
+ Speedup  : 1.01x
+ Accuracy preserved : YES
+
+ Amdahl's Law  (S=0.0219 = 2.2%  serial,  P=97.8%  parallel)
+ Theoretical speedup @ 2 threads : 1.96x
+ Theoretical max (N->inf)        : 45.7x
+ Speedup curve : {1: 1.0, 2: 1.96, 4: 3.75, 8: 6.94, 16: 12.05, 32: 19.06}
+
+Saved -> results/fig_amdahl.png
 
 ============================================================
 SECTION 10 — Ablation Studies
@@ -272,7 +294,13 @@ SECTION 16 — Save All Results to JSON
 ============================================================
 
 All results saved -> results/metrics_real.json
-Downloads started.
+Downloads started — 6 files.
+  metrics_real.json
+  figures.png                (all 3 charts combined)
+  fig_model_comparison.png   (report Figure 1)
+  fig_noise_robustness.png   (report Figure 2)
+  fig_feature_importance.png (report Figure 3)
+  fig_amdahl.png             (report Figure 4 — PDC / Amdahl's Law)
 
 ============================================================
 END OF LOG
